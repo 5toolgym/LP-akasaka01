@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(perl -pe 's/src=\"\"\"\"data:image\\\\/[^\"\"\"\"]+\"\"\"\"/src=\"\"\"\"[BASE64_BINARY_DATA]\"\"\"\"/g')",
+      "Bash(perl -pe 's/\\\\d+\\\\.\\\\d+/X/g')",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx --version)",
+      "Read(//usr/local/**)",
+      "Read(//opt/homebrew/**)",
+      "WebSearch"
+    ]
+  }
+}
