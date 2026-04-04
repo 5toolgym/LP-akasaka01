@@ -982,6 +982,7 @@ function closeDrawer(){hmbBtn.classList.remove('open');drawer.classList.remove('
 hmbBtn.addEventListener('click',()=>{drawer.classList.contains('open')?closeDrawer():openDrawer()});
 overlay.addEventListener('click',closeDrawer);
 document.querySelectorAll('.drawer-close-link').forEach(a=>{a.addEventListener('click',closeDrawer)});
+document.querySelectorAll('a[href*="kanzashi"]').forEach(a=>{a.addEventListener('click',function(){if(typeof fbq==='function')fbq('track','Lead');})});
 </script>
 </body>
 </html>
