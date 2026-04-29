@@ -511,10 +511,11 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
     <p class="hero-catch">完全個室で骨格・姿勢を徹底分析。<br>あなただけのプログラムで根本から変えます。</p>
   </div>
   <div class="hero-bottom">
+    <p style="font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.12em;margin:0 0 10px;">体験 → 入会率 <strong style="color:#fff;">90%</strong>　来た方のほぼ全員が入会を決めています</p>
     <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="hero-btn" target="_blank">
       体験トレーニングを予約する
     </a>
-    <p class="hero-price" style="color:rgba(255,255,255,0.6);font-size:12px;margin-top:10px;letter-spacing:0.06em;">初回90分 5,500円 / 当日入会で0円</p>
+    <p class="hero-price" style="color:rgba(255,255,255,0.6);font-size:12px;margin-top:10px;letter-spacing:0.06em;">当日入会で0円（通常 初回90分 5,500円）</p>
   </div>
 </section>
 
@@ -961,7 +962,7 @@ const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target
 document.querySelectorAll('.fi').forEach(el=>io.observe(el));
 const bar=document.getElementById('sbar');
 const hio=new IntersectionObserver(([e])=>{bar.classList.toggle('up',!e.isIntersecting)});
-hio.observe(document.getElementById('top'));
+hio.observe(document.querySelector('.hero-bottom'));
 const hmbBtn=document.getElementById('hmbBtn');
 const drawer=document.getElementById('drawer');
 const overlay=document.getElementById('drawerOverlay');
