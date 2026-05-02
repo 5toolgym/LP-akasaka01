@@ -20,8 +20,8 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8P5K4FSDEF"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-8P5K4FSDEF');</script>
 <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","vx3vnalemt");</script>
@@ -335,6 +335,22 @@ section{padding:var(--sec) var(--sp)}
 .flow-desc{font-size:15px;color:var(--mid);line-height:1.85;font-weight:300}
 .flow-time{display:inline-block;font-size:10px;letter-spacing:.1em;color:var(--green2);background:var(--green-pale);padding:2px 8px;border-radius:2px;margin-bottom:6px}
 
+/* ══ RESULTS ══ */
+.results{background:var(--bg)}
+.results-grid{display:flex;flex-direction:column;gap:14px;margin-bottom:12px}
+.result-card{background:var(--w);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.result-head{background:var(--bg2);padding:12px 18px;display:flex;align-items:center;justify-content:space-between}
+.result-meta{font-size:11px;color:var(--light);letter-spacing:.04em;line-height:1.6}
+.result-tag{font-size:10px;background:var(--green);color:#fff;padding:3px 10px;border-radius:20px;letter-spacing:.04em;white-space:nowrap}
+.result-body{padding:18px}
+.result-nums{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.result-num{text-align:center;padding:12px 8px;background:var(--bg);border-radius:4px}
+.result-num-label{font-size:10px;color:var(--light);letter-spacing:.06em;margin-bottom:4px}
+.result-num-val{font-family:'Outfit',sans-serif;font-size:22px;font-weight:300;color:var(--green);line-height:1}
+.result-num-change{font-size:11px;color:var(--green);font-weight:700;margin-top:2px}
+.result-voice{font-size:15px;color:var(--mid);line-height:1.8;padding-top:12px;border-top:1px solid var(--border)}
+.results-note{font-size:11px;color:var(--light);text-align:center;letter-spacing:.04em}
+
 /* ══ FAQ ══ */
 .faq{background:var(--w)}
 .faq-list{display:flex;flex-direction:column;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
@@ -479,15 +495,11 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 <div class="drawer" id="drawer">
   <div class="drawer-inner">
     <nav class="drawer-nav">
-      <a href="#top" class="drawer-close-link">トップ<span class="arr">→</span></a>
-      <a href="#pain" class="drawer-close-link">こんなお悩みありませんか<span class="arr">→</span></a>
-      <a href="#features" class="drawer-close-link">5toolgymの特徴<span class="arr">→</span></a>
+      <a href="#pain" class="drawer-close-link">お悩みについて<span class="arr">→</span></a>
+      <a href="#features" class="drawer-close-link">選ばれる理由<span class="arr">→</span></a>
       <a href="#price" class="drawer-close-link">料金プラン<span class="arr">→</span></a>
-      <a href="#trial" class="drawer-close-link">体験セッション<span class="arr">→</span></a>
       <a href="#trainer" class="drawer-close-link">トレーナー紹介<span class="arr">→</span></a>
       <a href="#access" class="drawer-close-link">アクセス<span class="arr">→</span></a>
-      <a href="privacy.html">プライバシーポリシー<span class="arr">→</span></a>
-      <a href="tokusho.html">特定商取引法<span class="arr">→</span></a>
     </nav>
     <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="drawer-cta" target="_blank">
       <svg width="16" height="16" viewBox="0 0 22 22" fill="none"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>
@@ -499,7 +511,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- ══════════ HERO ══════════ -->
 <section class="hero" id="top">
-  <div class="hero-photo"><img src="images/img1.jpg" alt="5toolgym 赤坂店 トレーニング風景"></div>
+  <div class="hero-photo"><img src="images/img2.webp" alt="5toolgym 赤坂店 トレーニング風景"></div>
   <div class="hero-shade"></div>
   <div class="hero-content">
     <span class="hero-eyebrow">完全個室 ／ PERSONAL TRAINING GYM ／ 福岡赤坂</span>
@@ -765,6 +777,79 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
     </div></div>
 </section>
 
+
+<!-- ══════════ RESULTS ══════════ -->
+<section class="results">
+  <span class="sec-eyebrow fi">RESULTS</span>
+  <h2 class="sec-ttl fi d1">通ってくださった方の<em>変化</em></h2>
+  <div class="sec-bar fi d2"></div>
+  <div class="results-grid fi d2">
+    <div class="result-card">
+      <div class="result-head">
+        <div class="result-meta">Aさん・40代女性<br>通い始めて約13ヶ月</div>
+        <span class="result-tag">体型・姿勢改善</span>
+      </div>
+      <div class="result-body">
+        <div class="result-nums">
+          <div class="result-num">
+            <p class="result-num-label">体重</p>
+            <p class="result-num-val">-9.3<span style="font-size:14px">kg</span></p>
+            <p class="result-num-change">64.6kg → 55.3kg</p>
+          </div>
+          <div class="result-num">
+            <p class="result-num-label">体脂肪率</p>
+            <p class="result-num-val">-8.7<span style="font-size:14px">%</span></p>
+            <p class="result-num-change">38.7% → 30.0%</p>
+          </div>
+        </div>
+        <p class="result-voice">続けるほどに、身体が変わっていくのが実感できます</p>
+      </div>
+    </div>
+    <div class="result-card">
+      <div class="result-head">
+        <div class="result-meta">Bさん・30代女性<br>通い始めて約6ヶ月</div>
+        <span class="result-tag">ダイエット</span>
+      </div>
+      <div class="result-body">
+        <div class="result-nums">
+          <div class="result-num">
+            <p class="result-num-label">体重</p>
+            <p class="result-num-val">-10.8<span style="font-size:14px">kg</span></p>
+            <p class="result-num-change">76.5kg → 65.7kg</p>
+          </div>
+          <div class="result-num">
+            <p class="result-num-label">体脂肪率</p>
+            <p class="result-num-val">-5.9<span style="font-size:14px">%</span></p>
+            <p class="result-num-change">45.8% → 39.9%</p>
+          </div>
+        </div>
+        <p class="result-voice">半年でこんなに変わるとは思っていませんでした</p>
+      </div>
+    </div>
+    <div class="result-card">
+      <div class="result-head">
+        <div class="result-meta">Cさん・20代女性<br>通い始めて約9ヶ月</div>
+        <span class="result-tag">体型改善</span>
+      </div>
+      <div class="result-body">
+        <div class="result-nums">
+          <div class="result-num">
+            <p class="result-num-label">体重</p>
+            <p class="result-num-val">-13.9<span style="font-size:14px">kg</span></p>
+            <p class="result-num-change">70.5kg → 56.6kg</p>
+          </div>
+          <div class="result-num">
+            <p class="result-num-label">体脂肪率</p>
+            <p class="result-num-val">-11.0<span style="font-size:14px">%</span></p>
+            <p class="result-num-change">39.5% → 28.5%</p>
+          </div>
+        </div>
+        <p class="result-voice">体重だけでなく、身体の動きが全然変わりました</p>
+      </div>
+    </div>
+  </div>
+  <p class="results-note fi d3">※ 個人の感想です。効果には個人差があります。</p>
+</section>
 
 <!-- ══════════ VOICE ══════════ -->
 <section class="voice">
