@@ -173,7 +173,7 @@ body.menu-open #sbar{display:none!important}
 .empathy-close em{font-style:normal;color:var(--gold)}
 
 .urgency{
-  background:var(--green);
+  background:#c0392b;
   padding:11px var(--sp);
   display:flex;align-items:center;justify-content:center;gap:8px;
   font-size:12px;color:#fff;letter-spacing:.08em;font-weight:400;
@@ -469,13 +469,15 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   .map-wrap{aspect-ratio:auto;min-height:420px}
   .access-info{padding:44px 40px}
 }
+.scroll-arrow{display:inline-block;font-style:normal;font-size:18px;color:rgba(255,255,255,.55);animation:scrollBounce 1.5s ease-in-out infinite}
+@keyframes scrollBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 </style>
 </head>
 <body>
 
 <!-- STICKY BAR -->
 <div id="sbar">
-  <p class="sbar-sub">今月の体験枠、残りわずかです</p>
+  <p class="sbar-sub">今月の体験枠 残り3名</p>
   <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="sbar-cta" target="_blank">
     <svg width="16" height="16" viewBox="0 0 22 22" fill="none"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>
     今すぐ体験を予約する
@@ -526,9 +528,12 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   <div class="hero-bottom">
     <p style="font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.12em;margin:0 0 10px;">体験 → 入会率 <strong style="color:#fff;">90%</strong>　来た方のほぼ全員が入会を決めています</p>
     <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="hero-btn" target="_blank">
-      体験トレーニングを予約する
+      体験を予約する（当日入会で0円）
     </a>
     <p class="hero-price" style="color:rgba(255,255,255,0.6);font-size:12px;margin-top:10px;letter-spacing:0.06em;">当日入会で0円（通常 初回90分 5,500円）</p>
+  </div>
+  <div style="text-align: center; padding: 12px 0 0;">
+    <i class="scroll-arrow" aria-hidden="true">&#8595;</i>
   </div>
 </section>
 
@@ -536,7 +541,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 <!-- URGENCY -->
 <div class="urgency">
   <span class="urgency-dot"></span>
-  今月の体験枠、残りわずかです
+  今月の体験枠 残り3名
 </div>
 
 <!-- ══════════ EMPATHY ══════════ -->
@@ -870,22 +875,22 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   </div>
   <div class="voice-list fi d2">
     <div class="vc">
-      <p class="vc-stars">★★★★★</p>
+      <div style="color:#EF9F27;font-size:13px;margin-bottom:4px;">★★★★★</div>
       <p class="vc-body">体型が気になって大手ジムには行けなかった私でも、ここは完全個室だから安心。3ヶ月でウエストが6cm細くなりました。</p>
       <p class="vc-meta">40代 女性・ダイエット目的</p>
     </div>
     <div class="vc">
-      <p class="vc-stars">★★★★★</p>
+      <div style="color:#EF9F27;font-size:13px;margin-bottom:4px;">★★★★★</div>
       <p class="vc-body">元々ダイエット目的で通い始めましたが、反り腰が良くなってきたことと肩こりが出なくなったことがとても嬉しいです。トレーナーさんと話し合ってダイエットは体重を急激に落とすのではなく、緩やかに落とす方針で進めています。</p>
       <p class="vc-meta">C.E. ／ 30代後半 女性・主婦・ダイエット目的</p>
     </div>
     <div class="vc">
-      <p class="vc-stars">★★★★★</p>
+      <div style="color:#EF9F27;font-size:13px;margin-bottom:4px;">★★★★★</div>
       <p class="vc-body">筋肉量が増えて代謝が上がり太りにくくなりました。姿勢や肩こりも少しずつ良くなってきています。周りの視線もないのでとても良いです。</p>
       <p class="vc-meta">女性・ダイエット目的</p>
     </div>
   </div>
-  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="trial-btn fi d3" target="_blank">まずは体験してみる →</a>
+  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="trial-btn fi d3" target="_blank">体験を予約する（当日入会で0円）</a>
 </section>
 
 <!-- ══════════ FLOW ══════════ -->
@@ -940,7 +945,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 <!-- ══ FLOW CTA ══ -->
 <div style="background:var(--w);padding:32px var(--sp);text-align:center;border-top:1px solid var(--border)">
   <p style="font-size:12px;color:var(--light);margin-bottom:16px;letter-spacing:.06em">予約はボタン1つ。相談だけでも大丈夫です</p>
-  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="trial-btn fi" target="_blank" style="max-width:420px;margin:0 auto">今すぐ体験を予約する（当日入会で0円）→</a>
+  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="trial-btn fi" target="_blank" style="max-width:420px;margin:0 auto">体験を予約する（当日入会で0円）</a>
 </div>
 
 <!-- ══════════ TRIAL ══════════ -->
@@ -950,9 +955,11 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   <div class="sec-bar fi d2" style="margin:0 auto 24px"></div>
   <div class="trial-card fi d2">
     <p class="trial-lbl">体験セッション料金</p>
-    <p class="trial-del">通常価格 ¥13,200（税込）</p>
-    <p style="font-size:11px;color:var(--light);margin-bottom:4px;letter-spacing:.04em">※90分・マンツーマン指導の単発セッション料金</p>
-    <p class="trial-price">¥5,500<span>（税込）</span></p>
+    <div style="display:flex;align-items:baseline;gap:12px;justify-content:center;margin-bottom:8px;">
+      <span style="font-size:1.05rem;color:#888;text-decoration:line-through;">通常 ¥13,200</span>
+      <span style="font-size:1.8rem;font-weight:bold;color:inherit;">¥5,500</span>
+      <span style="font-size:0.85rem;color:#888;">（税込）</span>
+    </div>
     <p class="trial-off">当日入会で0円</p>
     <div class="trial-rows">
       <div class="trial-row"><div class="ck"></div>カウンセリング（20分）</div>
@@ -961,7 +968,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
       <div class="trial-row"><div class="ck"></div>今後のご提案（5分）</div>
       <div class="trial-row"><div class="ck"></div>完全個室・マンツーマン指導</div>
     </div>
-    <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="trial-btn" target="_blank">今すぐ体験を予約する →</a>
+    <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="trial-btn" target="_blank">体験を予約する（当日入会で0円）</a>
     <p class="trial-note">当日ご入会で体験料が0円になります</p>
     <p class="trial-note" style="margin-top:8px">お支払方法：現金・クレジットカード・各種キャッシュレス決済</p>
   </div>
@@ -1044,7 +1051,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   </p>
   <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="fcta-btn fi d3" target="_blank">
     <svg width="18" height="18" viewBox="0 0 22 22" fill="none"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>
-    今すぐ体験を予約する（当日入会で0円）
+    今すぐ予約する →
   </a>
   <p class="fcta-note fi d3">当日入会で体験料0円 ／ 今月残りわずか</p>
 </section>
