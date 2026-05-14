@@ -76,7 +76,8 @@ nav{
   backdrop-filter:blur(14px);
   border-bottom:1px solid var(--border);
 }
-.logo{font-family:'Noto Serif JP',serif;font-size:14px;letter-spacing:.08em;color:var(--text);line-height:1.2}
+.logo{display:flex;align-items:center;gap:8px;font-family:'Noto Serif JP',serif;font-size:13px;letter-spacing:.08em;color:var(--text);line-height:1.2}
+.logo-img{height:24px;width:auto;flex-shrink:0}
 .logo-sub{display:block;font-size:8px;letter-spacing:.22em;color:var(--green);margin-bottom:1px;font-weight:500}
 .nav-rsv{
   display:flex;align-items:center;gap:6px;
@@ -487,7 +488,13 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- NAV -->
 <nav>
-  <div class="logo"><span class="logo-sub">福岡赤坂・大濠公園店</span>5toolgym</div>
+  <div class="logo">
+    <img src="images/logo.png" alt="5toolgym" class="logo-img">
+    <div>
+      <span class="logo-sub">AKASAKA PERSONAL TRAINING GYM</span>
+      5toolgym
+    </div>
+  </div>
   <div style="display:flex;align-items:center;gap:8px">
     <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="nav-rsv" target="_blank">体験予約</a>
     <button class="hmb-btn" id="hmbBtn" aria-label="メニュー"><span></span><span></span><span></span></button>
