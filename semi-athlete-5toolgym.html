@@ -210,6 +210,63 @@
     .contact-info p {
       margin-bottom: 10px;
     }
+    /* 信頼数値 */
+    .trust-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      padding: 48px 20px;
+      background: #f7f7f5;
+      border-top: 1px solid #f0f0f0;
+    }
+    .trust-metric {
+      text-align: center;
+      padding: 20px 12px;
+      background: #fff;
+      border-radius: 10px;
+    }
+    .t-num {
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      color: #2D7A7A;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .t-num small { font-size: 16px; }
+    .t-label { font-size: 12px; color: #666; line-height: 1.5; }
+    @media (max-width: 400px) {
+      .trust-metrics { gap: 8px; padding: 40px 16px; }
+      .t-num { font-size: 24px; }
+    }
+    /* アメニティ */
+    .amenities {
+      padding: 60px 20px;
+      background: #fff;
+      border-top: 1px solid #f0f0f0;
+    }
+    .amenities h2 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+    .amenity-lead { font-size: 15px; color: #555; line-height: 1.8; margin-bottom: 28px; }
+    .amenity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .amenity-card { border-radius: 10px; overflow: hidden; background: #f7f7f5; }
+    .amenity-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+    .amenity-ph {
+      width: 100%; aspect-ratio: 4 / 3; background: #e4e4e0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; color: #aaa;
+    }
+    .amenity-body { padding: 12px 14px; }
+    .amenity-body h3 { font-size: 13px; font-weight: 700; color: #1a1a1a; margin-bottom: 4px; }
+    .amenity-body p { font-size: 12px !important; color: #666; line-height: 1.6 !important; margin: 0 !important; }
+    @media (max-width: 500px) { .amenity-grid { grid-template-columns: 1fr 1fr; } }
+
     /* メソッドフロー */
     .method-flow {
       display: flex;
@@ -537,6 +594,53 @@
     
     <p>これは、お客様が心底、<br>
     「このジムはいい」と評価していただいてる証拠だと感じております。</p>
+  </div>
+</section>
+
+<!-- 信頼数値 -->
+<div class="trust-metrics">
+  <div class="trust-metric">
+    <span class="t-num">★5.0</span>
+    <span class="t-label">Google評価<br>（口コミ増加中）</span>
+  </div>
+  <div class="trust-metric">
+    <span class="t-num">13.1<small>ヶ月</small></span>
+    <span class="t-label">平均継続期間</span>
+  </div>
+  <div class="trust-metric">
+    <span class="t-num">90<small>%</small></span>
+    <span class="t-label">体験→入会<br>転換率</span>
+  </div>
+</div>
+
+<!-- アメニティ（赤坂） -->
+<section class="amenities">
+  <div class="container">
+    <h2>完全個室だから、<br>誰の目も気にならない</h2>
+    <p class="amenity-lead">周りの目を気にせず、自分のカラダとだけ向き合える空間。それが赤坂・大濠公園店が選ばれる理由です。</p>
+    <div class="amenity-grid">
+      <div class="amenity-card">
+        <div class="amenity-ph">📷 準備中</div>
+        <div class="amenity-body">
+          <h3>完全個室スペース</h3>
+          <p>周りの目を気にせず、あなたのペースでトレーニング。</p>
+        </div>
+      </div>
+      <div class="amenity-card">
+        <div class="amenity-ph">📷 準備中</div>
+        <div class="amenity-body">
+          <h3>個室シャワー＆パウダー</h3>
+          <p>セッション前後、身支度も整えられます。</p>
+        </div>
+      </div>
+      <div class="amenity-card">
+        <div class="amenity-ph">📷 準備中</div>
+        <div class="amenity-body">
+          <h3>落ち着いた待合スペース</h3>
+          <p>セッション前に緊張を和らげる時間が取れます。</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
