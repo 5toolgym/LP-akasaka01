@@ -119,6 +119,36 @@
       line-height: 1.8;
     }
     
+    /* トレーナーカード */
+    .trainer-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 30px 0;
+    }
+    .trainer-card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .trainer-card .trainer-name {
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .trainer-card .trainer-desc {
+      font-size: 13px !important;
+      color: #555;
+      line-height: 1.7 !important;
+      margin-bottom: 0 !important;
+    }
+    @media (max-width: 480px) {
+      .trainer-cards { grid-template-columns: 1fr 1fr; gap: 16px; }
+    }
+
     /* 挨拶画像 */
     .greeting-image {
       width: 100%;
@@ -407,23 +437,23 @@
     3ヶ月、6ヶ月先のゴールに向かって<br>
     一緒に歩んでいくトレーナーが必要です。</p>
     
-    <p><strong>柴山（オーナートレーナー）</strong><br>
-    5toolgymの理念である「楽に、強く、心地よく」を体現するトレーナー。<br>
-    カラダ評価から改善まで、<br>
-    全領域を見ることができる。<br>
-    お父さんのセミアスリート化を最も理解しているトレーナーです。</p>
-    
-    <p><strong>伊良部</strong><br>
-    男性トレーナー。<br>
-    丁寧なカウンセリングと、<br>
-    わかりやすい指導が特徴。<br>
-    お父さん層からも信頼が厚い。</p>
-    
-    <p><strong>manami</strong><br>
-    女性トレーナー。<br>
-    女性ならではの視点で、<br>
-    姿勢や動きを細かく指導。<br>
-    カラダの変化を敏感に察知します。</p>
+    <div class="trainer-cards">
+      <div class="trainer-card">
+        <img src="/images/trainer-shibayama-plain.webp" alt="柴山トレーナー">
+        <p class="trainer-name">柴山（オーナートレーナー）</p>
+        <p class="trainer-desc">5toolgymの理念「楽に、強く、心地よく」を体現。カラダ評価から改善まで全領域を担当。お父さんのセミアスリート化を最も理解しているトレーナー。</p>
+      </div>
+      <div class="trainer-card">
+        <img src="/images/trainer-irabe.webp" alt="伊良部トレーナー">
+        <p class="trainer-name">伊良部</p>
+        <p class="trainer-desc">男性トレーナー。丁寧なカウンセリングとわかりやすい指導が特徴。お父さん層からも信頼が厚い。</p>
+      </div>
+      <div class="trainer-card">
+        <img src="/images/trainer-manami-plain.webp" alt="manamiトレーナー">
+        <p class="trainer-name">manami</p>
+        <p class="trainer-desc">女性トレーナー。女性ならではの視点で姿勢や動きを細かく指導。カラダの変化を敏感に察知します。</p>
+      </div>
+    </div>
     
     <p>どのトレーナーが担当になっても、<br>
     5toolgymの哲学は共通。<br>
