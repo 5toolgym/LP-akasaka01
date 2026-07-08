@@ -3,7 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>子どもと一緒に走れるお父さんへ | セミアスリート | 5toolgym 赤坂・大濠公園店</title>
+  <title>子どもと、また全力で走れるお父さんへ | セミアスリート | 5toolgym 赤坂・大濠公園店</title>
+  <meta name="description" content="子どもと走れない、抱っこで腰が痛い、疲れて遊べない。それ、老化ではなくカラダが整っていないせいかもしれません。福岡・赤坂の完全個室パーソナルジム5toolgym。体験90分¥5,500。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="子どもと、また全力で走れるお父さんへ | 5toolgym 赤坂・大濠公園店">
+  <meta property="og:description" content="子どもと走れない、疲れて遊べない。カラダが整っていないせいかもしれません。完全個室パーソナルジム。体験90分¥5,500。">
+  <meta property="og:image" content="https://lp-akasaka01.5toolgym.workers.dev/images/ogp-semi-athlete.webp">
+  <meta property="og:url" content="https://lp-akasaka01.5toolgym.workers.dev/semi-athlete-5toolgym">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://lp-akasaka01.5toolgym.workers.dev/semi-athlete-5toolgym">
+  <link rel="icon" href="/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+  <!-- GA4: LP共通プロパティ G-8P5K4FSDEF を使用。専用プロパティ発行時はIDを差し替えること -->
+  <script>
+    var GA_ID = 'G-8P5K4FSDEF';
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    window.addEventListener('load', function(){
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+      s.async = true;
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', GA_ID);
+    });
+  </script>
+  <!-- Microsoft Clarity（vx3vnalemt = 赤坂LP共通） -->
+  <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","vx3vnalemt");</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "5toolgym赤坂・大濠公園店",
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "810-0073",
+      "addressRegion": "福岡県",
+      "addressLocality": "福岡市中央区",
+      "streetAddress": "舞鶴3丁目2-7 K2ビル1階"
+    },
+    "telephone": "+81-92-600-0296",
+    "openingHours": "Mo-Su 09:30-22:30",
+    "url": "https://lp-akasaka01.5toolgym.workers.dev/semi-athlete-5toolgym"
+  }
+  </script>
   <style>
     * {
       margin: 0;
@@ -12,7 +58,7 @@
     }
     
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Noto Sans JP', sans-serif;
       background-color: #ffffff;
       color: #1a1a1a;
       line-height: 1.8;
@@ -267,6 +313,127 @@
     .amenity-body p { font-size: 12px !important; color: #666; line-height: 1.6 !important; margin: 0 !important; }
     @media (max-width: 500px) { .amenity-grid { grid-template-columns: 1fr 1fr; } }
 
+    @media (max-width: 768px) {
+      body { padding-bottom: 68px; }
+    }
+
+    /* 追従CTAバー */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: opacity 0.3s, transform 0.3s;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    .sticky-cta.visible { opacity: 1; transform: translateY(0); }
+    .sticky-line {
+      background: #06C755;
+      flex: 1;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .sticky-reserve {
+      background: #2D7A7A;
+      flex: 1.5;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) { .sticky-cta { display: flex; } }
+
+    /* 中間CTA */
+    .mid-cta {
+      padding: 40px 20px;
+      background: #f4f9f9;
+      text-align: center;
+      border-top: 1px solid #e0eded;
+    }
+    .mid-cta p {
+      font-size: 16px;
+      color: #1a1a1a;
+      margin-bottom: 18px;
+      line-height: 1.8;
+    }
+    .mid-cta-btn {
+      display: inline-block;
+      background: #2D7A7A;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .mid-cta-btn:hover { background: #1f5555; }
+
+    /* FVヒーロー画像 */
+    .hero-img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 24px 0 20px;
+      display: block;
+    }
+    /* FV プライマリCTAボタン */
+    .fv-cta-btn {
+      display: inline-block;
+      background: #2D7A7A;
+      color: #fff;
+      padding: 16px 40px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      margin-top: 8px;
+      transition: background 0.2s;
+    }
+    .fv-cta-btn:hover { background: #1f5555; }
+    /* LINEボタン */
+    .line-btn {
+      background: #06C755;
+    }
+    .line-btn:hover { background: #05b34d; }
+    /* 完全個室バッジ */
+    .fv-badge {
+      display: inline-block;
+      background: #2D7A7A;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+    }
+    /* マップ */
+    .map-embed {
+      margin-top: 32px;
+    }
+    .map-embed iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
     /* メソッドフロー */
     .method-flow {
       display: flex;
@@ -393,32 +560,21 @@
 </head>
 <body>
 
+<!-- 追従フッターCTAバー（スマホのみ表示） -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="sticky-reserve" onclick="gtag('event','reserve_click',{position:'sticky'})">体験を予約する</a>
+  <a href="https://lin.ee/9aIBM3I" class="sticky-line" onclick="gtag('event','line_click',{position:'sticky'})">LINEで相談</a>
+</div>
+
 <!-- ファーストビュー -->
-<section class="fv">
+<section class="fv" id="fv-section">
   <div class="container">
-    <h1>子どもと一緒に走れるお父さんになりたくないですか。</h1>
+    <span class="fv-badge">完全個室 パーソナルジム</span>
+    <h1>子どもと、また全力で走れるお父さんへ。</h1>
     <p class="subtitle">見た目も動きも、全部整ったカラダで。</p>
-    
-    <p>ムキムキなお父さんもかっこいい。<br>
-    でも、本当にかっこいいお父さんって、</p>
-    
-    <p>子どもと公園で走って遊べる。<br>
-    家族旅行で遠出しても疲れない。<br>
-    子どもを抱っこしても腰が痛くない。<br>
-    姿勢もいいし、息切れもしない。<br>
-    仕事も全力。プライベートも全力。<br>
-    でも、スタミナがあるから続く。</p>
-    
-    <p>筋肉は「そこそこ」あってもいい。<br>
-    ただ、猫背で、息切れして、腰や膝が痛い…<br>
-    そんなお父さんは、本当の意味でかっこよくありません。</p>
-    
-    <p>5toolgymの「セミアスリート」は、<br>
-    見た目、動き、スタミナ、メンタル…<br>
-    全部が整ってるお父さんをつくります。</p>
-    
-    <p>子どもの笑顔を見たいなら。<br>
-    仕事も趣味も全力で楽しみたいなら。</p>
+    <!-- ヒーロー画像：/images/hero-semi-athlete.webp を制作後に差し替え -->
+    <img src="/images/hero-semi-athlete.webp" alt="5toolgym赤坂・大濠公園店 パーソナルトレーニング" class="hero-img" width="640" height="360" fetchpriority="high" onerror="this.style.display='none'">
+    <a href="#experience" class="fv-cta-btn" onclick="gtag('event','reserve_click',{position:'fv'})">体験について見る</a>
   </div>
 </section>
 
@@ -497,6 +653,12 @@
   </div>
 </section>
 
+<!-- 中間CTA 1 -->
+<div class="mid-cta">
+  <p>合うかどうかは、体験で確かめられます。</p>
+  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="mid-cta-btn" onclick="gtag('event','reserve_click',{position:'mid1'})">体験の空きを確認する</a>
+</div>
+
 <!-- 哲学 -->
 <section class="section">
   <div class="container">
@@ -559,11 +721,6 @@
       </div>
     </div>
 
-    <div class="method-badge">
-      NCCA（全日本コンディショニングコーチ協会）講師資格とは、<br>
-      トレーナーを育てる側の資格です。<br>
-      カラダの根本から整えるアプローチを、高い専門性で指導しています。
-    </div>
   </div>
 </section>
 
@@ -604,10 +761,6 @@
     <span class="t-label">Google評価<br>（口コミ増加中）</span>
   </div>
   <div class="trust-metric">
-    <span class="t-num">13.1<small>ヶ月</small></span>
-    <span class="t-label">平均継続期間</span>
-  </div>
-  <div class="trust-metric">
     <span class="t-num">90<small>%</small></span>
     <span class="t-label">体験→入会<br>転換率</span>
   </div>
@@ -620,14 +773,14 @@
     <p class="amenity-lead">周りの目を気にせず、自分のカラダとだけ向き合える空間。それが赤坂・大濠公園店が選ばれる理由です。</p>
     <div class="amenity-grid">
       <div class="amenity-card">
-        <img src="/images/amenity-studio-akasaka.webp" alt="完全個室トレーニングスペース" loading="lazy">
+        <img src="/images/amenity-studio-akasaka.webp" alt="完全個室トレーニングスペース" width="400" height="300" loading="lazy">
         <div class="amenity-body">
           <h3>完全個室スペース</h3>
           <p>周りの目を気にせず、あなたのペースでトレーニング。</p>
         </div>
       </div>
       <div class="amenity-card">
-        <img src="/images/amenity-lounge-akasaka.webp" alt="待合・カウンセリングスペース" loading="lazy">
+        <img src="/images/amenity-lounge-akasaka.webp" alt="待合・カウンセリングスペース" width="400" height="300" loading="lazy">
         <div class="amenity-body">
           <h3>落ち着いた待合スペース</h3>
           <p>セッション前に緊張を和らげる時間が取れます。</p>
@@ -638,7 +791,7 @@
 </section>
 
 <!-- 体験の流れ -->
-<section class="section">
+<section class="section" id="experience">
   <div class="container">
     <h2>体験セッション90分、<br>何が起きるか</h2>
 
@@ -693,13 +846,14 @@
       </div>
     </div>
 
-    <div class="flow-closing">
-      <p><strong>「体験だけのつもりが、続けたくなった」</strong><br>
-      体験→入会転換率90%。多くの方がその場で「続けたい」と言ってくれます。<br>
-      それはテクニックではなく、あなたのカラダが変化を感じるから。</p>
-    </div>
   </div>
 </section>
+
+<!-- 中間CTA 2 -->
+<div class="mid-cta">
+  <p>90分、あなたのカラダで試してください。</p>
+  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="mid-cta-btn" onclick="gtag('event','reserve_click',{position:'mid2'})">体験を予約する</a>
+</div>
 
 <!-- トレーナー紹介 -->
 <section class="section">
@@ -717,17 +871,17 @@
     
     <div class="trainer-cards">
       <div class="trainer-card">
-        <img src="/images/trainer-shibayama-plain.webp" alt="柴山トレーナー">
+        <img src="/images/trainer-shibayama-plain.webp" alt="柴山トレーナー" width="400" height="400" loading="lazy">
         <p class="trainer-name">柴山（オーナートレーナー）</p>
-        <p class="trainer-desc">5toolgymの理念「楽に、強く、心地よく」を体現。カラダ評価から改善まで全領域を担当。お父さんのセミアスリート化を最も理解しているトレーナー。</p>
+        <p class="trainer-desc">NCCA（全日本コンディショニングコーチ協会）講師資格を持つ、トレーナーを教える側のトレーナー。カラダ評価から改善まで全領域を担当。</p>
       </div>
       <div class="trainer-card">
-        <img src="/images/trainer-irabe.webp" alt="伊良部トレーナー">
+        <img src="/images/trainer-irabe.webp" alt="伊良部トレーナー" width="400" height="400" loading="lazy">
         <p class="trainer-name">伊良部</p>
         <p class="trainer-desc">男性トレーナー。丁寧なカウンセリングとわかりやすい指導が特徴。お父さん層からも信頼が厚い。</p>
       </div>
       <div class="trainer-card">
-        <img src="/images/trainer-manami-plain.webp" alt="manamiトレーナー">
+        <img src="/images/trainer-manami-plain.webp" alt="manamiトレーナー" width="400" height="400" loading="lazy">
         <p class="trainer-name">manami</p>
         <p class="trainer-desc">女性トレーナー。女性ならではの視点で姿勢や動きを細かく指導。カラダの変化を敏感に察知します。</p>
       </div>
@@ -746,7 +900,7 @@
     <h2>料金について。</h2>
     
     <p>体験セッション：¥5,500<br>
-    ※当日入会で、体験費は全額キャッシュバック</p>
+    ※当日ご入会の場合、体験費¥5,500はいただきません</p>
     
     <p>入会金：¥11,000</p>
     
@@ -778,6 +932,9 @@
     
     <p><strong>重要：合わなければ入会しなくて大丈夫です。</strong><br>
     体験後、無理な勧誘はしません。</p>
+
+    <p>7月の体験枠は、各店5名までです。<br>
+    埋まり次第、翌月のご案内になります。</p>
   </div>
 </section>
 
@@ -810,6 +967,36 @@
       <div class="q">Q5. 子どもが小さいから続けられるか不安です。</div>
       <div class="a">A. 5年以上通い続けているお父さんが珍しくありません。理由は「来ないと、調子が悪くなるし、子どもと遊べなくなる」から。つまり、人生に必要な習慣になるんです。</div>
     </div>
+
+    <!-- TODO: Q6 を追加（例：「完全個室とはどういう意味ですか？」等、ご希望のQAをここへ） -->
+    <!-- <div class="faq-item">
+      <div class="q">Q6. </div>
+      <div class="a">A. </div>
+    </div> -->
+
+    <!-- TODO: Q7 を追加 -->
+    <!-- <div class="faq-item">
+      <div class="q">Q7. </div>
+      <div class="a">A. </div>
+    </div> -->
+
+    <!-- TODO: Q8 を追加 -->
+    <!-- <div class="faq-item">
+      <div class="q">Q8. </div>
+      <div class="a">A. </div>
+    </div> -->
+
+    <!-- TODO: Q9 を追加 -->
+    <!-- <div class="faq-item">
+      <div class="q">Q9. </div>
+      <div class="a">A. </div>
+    </div> -->
+
+    <!-- TODO: Q10 を追加 -->
+    <!-- <div class="faq-item">
+      <div class="q">Q10. </div>
+      <div class="a">A. </div>
+    </div> -->
   </div>
 </section>
 
@@ -817,7 +1004,7 @@
 <section class="section">
   <div class="container">
     <div class="greeting-image">
-      <img src="/images/semi-athlete-greeting.webp" alt="柴山からのご挨拶" style="max-width: 600px; width: 100%;">
+      <img src="/images/semi-athlete-greeting.webp" alt="柴山からのご挨拶" width="600" height="400" loading="lazy" style="max-width: 600px; width: 100%;">
       <!-- 注：実際にはセミアスリート挨拶文.pngの画像URLに置き換えてください -->
     </div>
   </div>
@@ -826,35 +1013,61 @@
 <!-- CTA -->
 <section class="cta">
   <div class="container">
-    <h2>その感覚を、体で確かめてください。</h2>
-    
-    <p>子どもの笑顔を見たいから。<br>
-    仕事も趣味も全力で楽しみたいから。</p>
-    
-    <p>セミアスリートというカラダを手に入れる。</p>
-    
-    <p>でも、言葉だけでは伝わりません。<br>
-    あなたのカラダで、体感してください。</p>
-    
-    <p>90分の体験で、<br>
-    あなたのカラダがどう変わるか。<br>
-    その違いを感じてみませんか。</p>
-    
-    <div style="margin: 30px 0;">
-      <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="cta-button">体験予約</a>
+    <p>まず、一度だけ来てみてください。<br>
+    90分で、あなたのカラダに何が足りなかったのかがわかります。<br>
+    合わなければ、入会しなくて大丈夫です。</p>
+
+    <div style="margin: 30px 0; display: flex; flex-direction: column; gap: 12px; align-items: center;">
+      <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="cta-button" onclick="gtag('event','reserve_click',{position:'footer'})">体験を予約する（かんざし）</a>
+      <a href="https://lin.ee/9aIBM3I" class="cta-button line-btn" style="width:100%;max-width:320px;box-sizing:border-box;" onclick="gtag('event','line_click',{position:'footer'})">LINEで相談する</a>
+      <a href="tel:0926000296" style="display:block;font-size:1.1rem;color:#1a1a1a;text-decoration:none;" onclick="gtag('event','tel_click',{position:'footer'})">電話：<span style="font-family:'Outfit',sans-serif;font-weight:700;">092-600-0296</span></a>
     </div>
-    
+
     <div class="contact-info">
-      <p><strong>【赤坂・大濠公園店について】</strong></p>
+      <p><strong>5toolgym 赤坂・大濠公園店</strong></p>
       <p>〒810-0073 福岡県福岡市中央区舞鶴3丁目2−7 K2ビル1階</p>
-      <p>アクセス：赤坂駅徒歩6分／大濠公園駅徒歩11分／天神駅徒歩13分</p>
-      <p>営業時間：9:30～22:30（完全個室）</p>
-      <p>電話：092-600-0296</p>
-      <p>公式LINE：https://lin.ee/9aIBM3I</p>
-      <p>ご連絡をお待ちしています。</p>
+      <p>赤坂駅徒歩6分 ／ 大濠公園駅徒歩11分 ／ 天神駅徒歩13分</p>
+      <p>営業時間：9:30〜22:30（完全個室）</p>
+    </div>
+
+    <div class="map-embed">
+      <iframe
+        src="https://maps.google.com/maps?q=福岡県福岡市中央区舞鶴3丁目2-7+K2ビル1階&output=embed&hl=ja&z=17"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="5toolgym赤坂・大濠公園店 地図"></iframe>
     </div>
   </div>
 </section>
 
+<script>
+  (function(){
+    var fv = document.getElementById('fv-section');
+    var bar = document.getElementById('stickyCta');
+    if(!fv || !bar) return;
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(!e.isIntersecting){
+          bar.classList.add('visible');
+        } else {
+          bar.classList.remove('visible');
+        }
+      });
+    }, {threshold: 0});
+    obs.observe(fv);
+
+    /* scroll_depth イベント（25/50/75/100%） */
+    var depths = [25, 50, 75, 100];
+    var fired = {};
+    window.addEventListener('scroll', function(){
+      var pct = Math.round((window.scrollY + window.innerHeight) / document.body.scrollHeight * 100);
+      depths.forEach(function(d){
+        if(pct >= d && !fired[d]){
+          fired[d] = true;
+          gtag('event','scroll_depth',{depth: d});
+        }
+      });
+    }, {passive: true});
+  })();
+</script>
 </body>
 </html>
