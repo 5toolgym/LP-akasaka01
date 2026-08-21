@@ -60,7 +60,10 @@ body { font-family: 'Zen Kaku Gothic New', sans-serif; background: var(--black);
 .drawer-overlay.show { opacity: 1; pointer-events: auto; }
 body.menu-open { overflow: hidden; }
 @media(min-width:768px) { .hmb, .drawer, .drawer-overlay { display: none; } }
-.hero { padding: 64px 20px 80px; max-width: 680px; margin: 0 auto; }
+.hero { padding: 0 0 80px; max-width: 680px; margin: 0 auto; }
+.hero-photo { width: 100%; line-height: 0; }
+.hero-photo img { width: 100%; height: auto; display: block; }
+.hero-body { padding: 32px 20px 0; }
 .hero-eyebrow { display: inline-block; font-size: 12px; color: var(--accent); background: rgba(200,240,69,0.1); border: 1px solid rgba(200,240,69,0.3); padding: 6px 16px; border-radius: 100px; letter-spacing: 2px; margin-bottom: 28px; }
 .hero h1 { font-family: 'Noto Serif JP', serif; font-size: clamp(26px, 6vw, 42px); font-weight: 700; line-height: 1.4; margin-bottom: 24px; }
 .hero h1 em { color: var(--accent); font-style: normal; display: block; }
@@ -191,12 +194,11 @@ body.menu-open { overflow: hidden; }
 <div class="drawer-overlay" id="drawerOverlay"></div>
 
 <section class="hero" id="top">
-  <div class="hero-eyebrow">運動が続かなかった方・初めての方へ</div>
-  <h1>
-    続かなかったのは、<br>あなたのせいじゃない。
-    <em>仕組みが、間違っていただけです。</em>
-  </h1>
-  <p class="hero-sub">自分のさじ加減で決まる運動は、続きません。<br>パーソナルトレーニングは「続けられる仕組み」そのものです。</p>
+  <div class="hero-photo">
+    <picture><source srcset="images/hero-beginner-promo.webp" type="image/webp"><img src="images/hero-beginner-promo.jpg" fetchpriority="high" alt="5toolgym福岡赤坂・大濠公園店 パーソナルトレーニング 体験トレーニング90分13,200円が当日入会で無料 運動が続かない・運動をしたことがない人でも続くし変わる 平均継続期間13.1ヶ月 赤坂駅から徒歩6分 お子様とご一緒OK完全個室"></picture>
+  </div>
+  <div class="hero-body">
+  <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">続かなかったのは、あなたのせいじゃない。仕組みが、間違っていただけです。自分のさじ加減で決まる運動は、続きません。</h1>
   <div class="hero-stats">
     <div>
       <span class="hero-stat-num">91%</span>
@@ -210,6 +212,7 @@ body.menu-open { overflow: hidden; }
   </div>
   <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="btn-primary">体験を予約する（当日入会で0円）</a>
   <p class="btn-note">通常¥13,200 → 初回体験¥5,500 / 90分 / 無理な勧誘なし</p>
+  </div>
 </section>
 
 <section class="scene" id="scene">
