@@ -41,7 +41,7 @@ body{
 :root{
   --w:#FFFFFF;--bg:#F8F7F4;--bg2:#F0EDE8;
   --border:#E4E0D9;--text:#1C1B18;--mid:#3A3730;--light:#6E6B68;
-  --green:#3E6B4E;--green2:#5A8C6A;--green-pale:#EAF2EC;
+  --green:#D4537E;--green2:#C43F6B;--green-pale:#FCEFF4;
   --gold:#C8A86B;
   --sp:20px;--sec:60px;--r:4px;
 }
@@ -68,8 +68,10 @@ body{
 .sbar-note{font-size:10px;color:rgba(255,255,255,.28);margin-top:6px;letter-spacing:.04em}
 
 /* ══ NAV ══ */
+.topbar{position:sticky;top:0;z-index:301;background:var(--green);color:#fff;text-align:center;padding:10px 16px;font-size:13px;font-weight:900;letter-spacing:1px}
+.topbar a{color:#fff;text-decoration:none;font-weight:900}
 nav{
-  position:fixed;top:0;left:0;right:0;z-index:300;
+  position:sticky;top:var(--topbar-h,40px);left:0;right:0;z-index:300;
   height:52px;
   display:flex;align-items:center;justify-content:space-between;
   padding:0 var(--sp);
@@ -91,7 +93,7 @@ nav{
 .hmb-btn.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
 .hmb-btn.open span:nth-child(2){opacity:0;width:0}
 .hmb-btn.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
-.drawer{position:fixed;top:52px;left:0;right:0;bottom:0;z-index:9999;background:#FFFFFF;overflow-y:auto;transform:translateX(100%);transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.drawer{position:fixed;top:calc(52px + var(--topbar-h,40px));left:0;right:0;bottom:0;z-index:9999;background:#FFFFFF;overflow-y:auto;transform:translateX(100%);transition:transform .35s cubic-bezier(.16,1,.3,1)}
 .drawer.open{transform:translateX(0)}
 .drawer-inner{padding:32px var(--sp) 48px}
 .drawer-nav{position:static!important;height:auto!important;display:flex!important;flex-direction:column!important;gap:0;margin-bottom:32px;background:none!important;border:none!important;padding:0!important;backdrop-filter:none!important;box-shadow:none!important}
@@ -106,22 +108,11 @@ body.menu-open #sbar{display:none!important}
 
 /* ══ HERO ══ */
 .hero{
-  position:relative;min-height:100svh;
-  display:flex;flex-direction:column;justify-content:flex-start;
-  padding:calc(52px + 24px) var(--sp) 40px;overflow:hidden;background:#1a1a1a;
+  position:relative;padding:24px 0 0;overflow:hidden;background:#fff;
 }
-.hero-photo{position:absolute;inset:0;z-index:0}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
-.hero-shade{
-  position:absolute;inset:0;z-index:1;
-  background:linear-gradient(to bottom,
-    rgba(10,10,8,.88) 0%,
-    rgba(10,10,8,.72) 45%,
-    rgba(10,10,8,.42) 70%,
-    rgba(10,10,8,.20) 100%);
-}
-.hero-content{position:relative;z-index:2}
-.hero-bottom{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:24px var(--sp) calc(28px + env(safe-area-inset-bottom));background:linear-gradient(to top,rgba(10,10,8,.85) 0%,rgba(10,10,8,.45) 65%,rgba(10,10,8,0) 100%)}
+.hero-photo{width:100%;line-height:0}
+.hero-photo img{width:100%;height:auto;display:block}
+.hero-bottom{position:relative;z-index:2;padding:24px var(--sp) calc(28px + env(safe-area-inset-bottom));background:#fff;max-width:var(--max,480px);margin:0 auto}
 .hero-eyebrow{
   font-size:9px;letter-spacing:.32em;color:rgba(255,255,255,.5);
   font-weight:500;margin-bottom:16px;display:block;
@@ -159,7 +150,7 @@ body.menu-open #sbar{display:none!important}
   background:var(--green);color:#fff;
   padding:18px var(--sp);border-radius:var(--r);
   font-size:15px;font-weight:500;letter-spacing:.05em;
-  text-decoration:none;box-shadow:0 6px 28px rgba(62,107,78,.45);
+  text-decoration:none;box-shadow:0 6px 28px rgba(212,83,126,.45);
   margin-bottom:8px;
 }
 .hero-price{font-size:10px;color:rgba(255,255,255,.4);text-align:center;letter-spacing:.06em}
@@ -392,7 +383,7 @@ details[open] .faq-icon{transform:rotate(45deg);border-color:var(--green)}
   padding:18px;border-radius:var(--r);
   font-size:15px;font-weight:500;letter-spacing:.06em;
   text-decoration:none;margin-bottom:10px;
-  box-shadow:0 6px 28px rgba(62,107,78,.35);
+  box-shadow:0 6px 28px rgba(212,83,126,.35);
 }
 .fcta-note{font-size:11px;color:rgba(255,255,255,.22);letter-spacing:.05em}
 
@@ -404,7 +395,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 .foot-copy{font-size:10px;color:rgba(255,255,255,.16);letter-spacing:.08em}
 
 /* ══ TRIAL ══ */
-.trial{background:var(--green-pale);padding:var(--sec) var(--sp);border-top:1px solid rgba(62,107,78,.12)}
+.trial{background:var(--green-pale);padding:var(--sec) var(--sp);border-top:1px solid rgba(212,83,126,.12)}
 .trial-card{background:var(--w);border:1px solid var(--border);border-radius:8px;padding:28px 20px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,.06)}
 .trial-lbl{font-size:10px;letter-spacing:.18em;color:var(--light);margin-bottom:6px}
 .trial-del{font-size:12px;color:var(--light);text-decoration:line-through;margin-bottom:3px}
@@ -415,7 +406,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 .trial-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border);font-size:16px;color:var(--mid);font-weight:300}
 .ck{width:18px;height:18px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .ck::after{content:'';display:block;width:7px;height:4px;border-left:1.5px solid #fff;border-bottom:1.5px solid #fff;transform:rotate(-45deg) translateY(-1px)}
-.trial-btn{display:flex;align-items:center;justify-content:center;background:var(--green);color:#fff;padding:17px;border-radius:var(--r);font-size:15px;font-weight:500;letter-spacing:.06em;text-decoration:none;margin-bottom:10px;box-shadow:0 4px 20px rgba(62,107,78,.3)}
+.trial-btn{display:flex;align-items:center;justify-content:center;background:var(--green);color:#fff;padding:17px;border-radius:var(--r);font-size:15px;font-weight:500;letter-spacing:.06em;text-decoration:none;margin-bottom:10px;box-shadow:0 4px 20px rgba(212,83,126,.3)}
 .trial-note{font-size:11px;color:var(--light);letter-spacing:.05em}
 
 /* ══ CTA ANIMATION ══ */
@@ -429,8 +420,8 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   96%{transform:translateX(0)}
 }
 @keyframes cta-pulse{
-  0%,100%{box-shadow:0 6px 28px rgba(62,107,78,.45)}
-  50%{box-shadow:0 6px 36px rgba(62,107,78,.7)}
+  0%,100%{box-shadow:0 6px 28px rgba(212,83,126,.45)}
+  50%{box-shadow:0 6px 36px rgba(212,83,126,.7)}
 }
 .hero-btn{animation:cta-nudge 4s ease-in-out infinite, cta-pulse 2.5s ease-in-out infinite}
 .trial-btn{animation:cta-nudge 4.5s ease-in-out infinite 0.3s}
@@ -453,12 +444,8 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   body{padding-bottom:0}
   #sbar{display:none}
   :root{--sp:44px;--sec:88px}
-  .hero-photo{position:absolute;left:44%;top:0;bottom:0;right:0;width:auto}
-  .hero-photo img{object-position:center 20%}
-  .hero-shade{background:linear-gradient(to right,rgba(10,10,8,.88) 0%,rgba(10,10,8,.65) 42%,rgba(10,10,8,.12) 68%,rgba(10,10,8,0) 100%)}
-  .hero-content{max-width:500px}
+  .hero-photo{max-width:420px;margin:0 auto}
   .hero-btn{max-width:380px}
-  .hero-h1-main{font-size:clamp(40px,5.5vw,58px)}
   .pain-grid{grid-template-columns:1fr 1fr}
   .why-highlight p{font-size:clamp(18px,2.2vw,22px)}
   .feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -471,7 +458,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   .map-wrap{aspect-ratio:auto;min-height:420px}
   .access-info{padding:44px 40px}
 }
-.scroll-arrow{display:inline-block;font-style:normal;font-size:18px;color:rgba(255,255,255,.55);animation:scrollBounce 1.5s ease-in-out infinite}
+.scroll-arrow{display:inline-block;font-style:normal;font-size:18px;color:var(--light);animation:scrollBounce 1.5s ease-in-out infinite}
 @keyframes scrollBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 .letter-sec{background:#fdfaf5;padding:80px var(--sp)}
 .letter-inner{max-width:600px;margin:0 auto;background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:4px;padding:48px 40px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
@@ -491,6 +478,11 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
     今すぐ体験を予約する
   </a>
   <p class="sbar-note">当日入会で体験0円 / 相談だけでもOK</p>
+</div>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  今月の体験枠 残り3名｜<a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei">体験を予約する（当日入会で0円）</a>
 </div>
 
 <!-- NAV -->
@@ -525,24 +517,12 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- ══════════ HERO ══════════ -->
 <section class="hero" id="top">
-  <div class="hero-photo"><picture><source srcset="images/training-balance.webp" type="image/webp"><img src="images/training-balance.jpg" fetchpriority="high" alt="5toolgym パーソナルトレーニング"></picture></div>
-  <div class="hero-shade"></div>
-  <div class="hero-content">
-    <span class="hero-eyebrow">完全個室 ／ PERSONAL TRAINING GYM ／ 福岡赤坂・大濠公園</span>
-    <div class="hero-trust-badge">
-      <span class="hero-trust-num">13.1<small>ヶ月</small></span>
-      <span class="hero-trust-label">会員の平均継続期間<br>続けられるから、変わる。</span>
-    </div>
-    <p class="hero-h1" style="margin-top:80px">何をやっても変わらなかった身体が、</p>
-    <span class="hero-h1-main">変わり始める。</span>
-    <p class="hero-catch">完全個室だから、人目を気にせず自分と向き合える。</p>
-  </div>
-  <div class="hero-bottom">
-    <p style="font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.12em;margin:0 0 10px;">体験 → 入会率 <strong style="color:#fff;">90%</strong>　来た方のほぼ全員が入会を決めています</p>
+  <div class="hero-photo"><picture><source srcset="images/hero-diet-promo.webp" type="image/webp"><img src="images/hero-diet-promo.jpg" fetchpriority="high" alt="5toolgym 福岡赤坂・大濠公園店 完全個室パーソナルトレーニングジム 残り3名 体験90分5,500円"></picture></div>
+  <div class="hero-bottom" style="padding-top:24px">
     <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="hero-btn" target="_blank">
       体験を予約する（当日入会で0円）
     </a>
-    <p class="hero-price" style="color:rgba(255,255,255,0.6);font-size:12px;margin-top:10px;letter-spacing:0.06em;">当日入会で0円（通常 初回90分 5,500円）</p>
+    <p class="hero-price" style="color:rgba(0,0,0,0.45);font-size:12px;margin-top:10px;letter-spacing:0.06em;">当日入会で0円（通常 初回90分 5,500円）</p>
   </div>
   <div style="text-align: center; padding: 12px 0 0;">
     <i class="scroll-arrow" aria-hidden="true">&#8595;</i>
@@ -568,36 +548,36 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- ══════════ PAIN ══════════ -->
 <section class="pain" id="pain">
-  <span class="sec-eyebrow fi">YOUR STORY</span>
+  <span class="sec-eyebrow fi">お悩みについて</span>
   <h2 class="sec-ttl fi d1">こんなお悩み、<br><em>ありませんか？</em></h2>
   <div class="sec-bar fi d2"></div>
   <div class="pain-grid fi d2">
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
       <p>炭水化物を我慢しているのに、<br>体重が変わらない</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
       <p>きんに君の動画・脚パカ・<br>ステッパー、全部試した。<br>変わらなかった</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
       <p>ホットヨガも<br>マシンピラティスも通った。<br>体重は同じだった</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v8"/><path d="M8 21l4-6 4 6"/><path d="M9 11l-3 2"/><path d="M15 11l3 2"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v8"/><path d="M8 21l4-6 4 6"/><path d="M9 11l-3 2"/><path d="M15 11l3 2"/></svg></div>
       <p>ランニングはハードルが高くて、<br>続く気がしない</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
       <p>食べたいものを食べたい。<br>お酒もやめたくない。でも痩せたい</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
       <p>大手ジムは人目が気になって、<br>なかなか足が向かない</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
       <p>正直、自分は<br>一生痩せられない気がしている</p>
     </div>
   </div>
@@ -606,7 +586,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- ══════════ WHY ══════════ -->
 <section class="why">
-  <span class="sec-eyebrow fi">WHY 5TOOLGYM</span>
+  <span class="sec-eyebrow fi">変わらない理由</span>
   <h2 class="sec-ttl fi d1">「やっても変わらない」<br>本当の理由は、<br><em>順番が違うから</em>です。</h2>
   <div class="sec-bar fi d2"></div>
   <p class="why-story fi d2">多くのダイエットは「食事を減らす」「運動を増やす」から始めます。でも<strong>身体の使い方が崩れたまま運動しても、代謝は上がりません。</strong>正しい順番はこうです。</p>
@@ -627,14 +607,14 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- ══════════ FEATURES ══════════ -->
 <section class="features" id="features">
-  <span class="sec-eyebrow fi">FEATURES</span>
+  <span class="sec-eyebrow fi">選ばれる理由</span>
   <h2 class="sec-ttl fi d1">5toolgymの<em>特徴</em></h2>
   <div class="sec-bar fi d2"></div>
   <div class="feat-grid fi d2">
 
     <div class="feat-item">
       <div class="feat-ico">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="#3E6B4E" stroke-width="1.6"/><path d="M12 8v4l3 3" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="#D4537E" stroke-width="1.6"/><path d="M12 8v4l3 3" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
         <span class="feat-tag">根本改善</span>
@@ -645,7 +625,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
     <div class="feat-item">
       <div class="feat-ico">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#3E6B4E" stroke-width="1.6"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#D4537E" stroke-width="1.6"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
       <div>
         <span class="feat-tag">完全個室</span>
@@ -656,7 +636,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
     <div class="feat-item">
       <div class="feat-ico">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#3E6B4E" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 2v6h6M9 13h6M9 17h4" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#D4537E" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 2v6h6M9 13h6M9 17h4" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
       <div>
         <span class="feat-tag">個別設計</span>
@@ -667,7 +647,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
     <div class="feat-item">
       <div class="feat-ico">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="#3E6B4E" stroke-width="1.6"/><path d="M16 2v4M8 2v4M3 10h18" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round"/><path d="M9 16l2 2 4-4" stroke="#3E6B4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="#D4537E" stroke-width="1.6"/><path d="M16 2v4M8 2v4M3 10h18" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round"/><path d="M9 16l2 2 4-4" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
         <span class="feat-tag">柔軟性</span>
@@ -681,7 +661,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- ══════════ PRICE ══════════ -->
 <section class="price-sec" id="price">
-  <span class="sec-eyebrow fi">PLAN</span>
+  <span class="sec-eyebrow fi">料金プラン</span>
   <h2 class="sec-ttl fi d1">料金プラン</h2>
   <div class="sec-bar fi d2"></div>
   <p class="fi d2" style="text-align:center;font-size:11px;letter-spacing:.15em;color:var(--light);margin-bottom:6px;">すべてのコースに含まれるもの</p>
@@ -757,7 +737,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- ══════════ TRAINERS ══════════ -->
 <section class="trainers" id="trainer">
-  <span class="sec-eyebrow fi">TRAINER</span>
+  <span class="sec-eyebrow fi">トレーナー紹介</span>
   <h2 class="sec-ttl fi d1">トレーナー紹介</h2>
   <div class="sec-bar fi d2"></div>
   <div class="trainer-list fi d2">
@@ -780,13 +760,23 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
         <p class="tcard-tag">女性専門トレーナー</p>
         <p class="tcard-bio">ホルモンバランスや産後の体型変化など、女性特有の悩みに寄り添った指導が強み。「言いにくいことも相談しやすい」と女性のお客様から高い信頼を得ています。</p>
       </div>
+    </div>
+
+    <div class="tcard">
+      <div class="tcard-photo"><picture><source srcset="images/trainer-ami.webp" type="image/webp"><img loading="lazy" src="images/trainer-ami.jpg" alt="Ami"></picture></div>
+      <div>
+        <p class="tcard-role">PERSONAL TRAINER</p>
+        <p class="tcard-name">Ami</p>
+        <p class="tcard-tag">継続サポートが得意</p>
+        <p class="tcard-bio">「体は資本」を信条に、皆さまの目標に一歩ずつ近づけるようサポートします。学生時代から続けてきたバスケットボールで培った継続力を活かし、無理なく続けられるトレーニングを一緒に作っていきます。</p>
+      </div>
     </div></div>
 </section>
 
 
 <!-- ══════════ RESULTS ══════════ -->
 <section class="results">
-  <span class="sec-eyebrow fi">RESULTS</span>
+  <span class="sec-eyebrow fi">実績</span>
   <h2 class="sec-ttl fi d1">通ってくださった方の<em>変化</em></h2>
   <div class="sec-bar fi d2"></div>
   <div class="results-grid fi d2">
@@ -861,7 +851,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- ══════════ VOICE ══════════ -->
 <section class="voice">
-  <span class="sec-eyebrow fi">VOICE</span>
+  <span class="sec-eyebrow fi">お客様の声</span>
   <h2 class="sec-ttl fi d1">お客様の声</h2>
   <div class="sec-bar fi d2"></div>
   <div class="fi d2" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-bottom:32px;border-radius:8px;overflow:hidden;">
@@ -874,8 +864,9 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
       <div style="font-size:10px;color:var(--light);letter-spacing:.08em;margin-top:6px;line-height:1.5;">Google口コミ</div>
     </div>
     <div style="background:var(--bg);padding:20px 12px;text-align:center;">
-      <div style="font-family:'Noto Serif JP',serif;font-size:32px;font-weight:300;color:var(--green);line-height:1;">90<span style="font-size:14px;">%</span></div>
+      <div style="font-family:'Noto Serif JP',serif;font-size:32px;font-weight:300;color:var(--green);line-height:1;">91<span style="font-size:14px;">%</span></div>
       <div style="font-size:10px;color:var(--light);letter-spacing:.08em;margin-top:6px;line-height:1.5;">体験→入会率</div>
+      <div style="font-size:8px;color:var(--light);letter-spacing:0;margin-top:4px;line-height:1.4">2024年12月〜2026年5月／36名中33名</div>
     </div>
   </div>
   <div class="voice-list fi d2">
@@ -900,7 +891,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- ══════════ FLOW ══════════ -->
 <section class="flow" id="flow">
-  <span class="sec-eyebrow fi">TRIAL FLOW</span>
+  <span class="sec-eyebrow fi">体験の流れ</span>
   <h2 class="sec-ttl fi d1">体験トレーニングの流れ</h2>
   <div class="sec-bar fi d2"></div>
   <div class="flow-list fi d2">
@@ -955,7 +946,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- ══════════ TRIAL ══════════ -->
 <section class="trial" id="trial">
-  <span class="sec-eyebrow fi" style="text-align:center">TRIAL SESSION</span>
+  <span class="sec-eyebrow fi" style="text-align:center">体験のご案内</span>
   <h2 class="sec-ttl fi d1" style="text-align:center">まずは一度、<br>体験してください。</h2>
   <div class="sec-bar fi d2" style="margin:0 auto 24px"></div>
   <div class="trial-card fi d2">
@@ -981,7 +972,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- ══════════ FAQ ══════════ -->
 <section class="faq">
-  <span class="sec-eyebrow fi">FAQ</span>
+  <span class="sec-eyebrow fi">よくある質問</span>
   <h2 class="sec-ttl fi d1">よくあるご質問</h2>
   <div class="sec-bar fi d2"></div>
   <div class="faq-list fi d2">
@@ -1025,13 +1016,13 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 <!-- ══════════ ACCESS ══════════ -->
 <section class="access" id="access">
   <div class="access-head">
-    <span class="sec-eyebrow fi">ACCESS</span>
+    <span class="sec-eyebrow fi">アクセス</span>
     <h2 class="sec-ttl fi d1">福岡赤坂・大濠公園店</h2>
   </div>
   <div class="access-wrap">
     <div class="map-wrap" id="mapWrap">
       <div id="mapPlaceholder" style="width:100%;height:100%;background:#e8e4de;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;cursor:pointer;" onclick="loadMap()">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#3E6B4E"/></svg>
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#D4537E"/></svg>
         <span style="font-size:13px;color:var(--green);font-weight:500;letter-spacing:.06em">地図を表示する</span>
         <span style="font-size:11px;color:var(--light)">タップで読み込み</span>
       </div>
@@ -1054,7 +1045,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
     <p class="letter-text">新しいことを始めるとき、<br>楽しみと同じくらい、不安もありますよね。</p>
     <p class="letter-text">5toolgymってどんな場所なんだろう？<br>トレーナーはどんな人なんだろう？<br>自分の悩みを、<br>本当に解決してもらえるんだろうか？</p>
     <p class="letter-text">その気持ち、とてもよくわかります。<br>だからこそ、一つお伝えさせてください。</p>
-    <p class="letter-text">体験トレーニングにお越しいただいたお客様のうち、9割以上がそのままご入会されています。また、入会後も長く通い続けてくださる方が多く、平均継続期間は13ヶ月以上です。</p>
+    <p class="letter-text">体験トレーニングにお越しいただいたお客様のうち、91%（2024年12月〜2026年5月／36名中33名）がそのままご入会されています。また、入会後も長く通い続けてくださる方が多く、平均継続期間は13ヶ月以上です。</p>
     <p class="letter-text">これは、<br>私たちが数字を誇りたいのではなく、<br>「来てみれば、きっとわかる」<br>という自信の表れです。</p>
     <p class="letter-text">5toolgymのトレーナー全員で、<br>あなたのお悩みに向き合います。<br>ぜひ、私たちを頼ってください。<br>無理な勧誘は一切ありませんので、<br>どうか安心してご予約・ご来店ください。<br>あなたとお会いできるのを、<br>心待ちにしています。</p>
     <p class="letter-sig">5toolgym代表　柴山 智幸</p>
@@ -1093,6 +1084,10 @@ document.querySelectorAll('.fi').forEach(el=>io.observe(el));
 const bar=document.getElementById('sbar');
 const hio=new IntersectionObserver(([e])=>{bar.classList.toggle('up',!e.isIntersecting)});
 hio.observe(document.querySelector('.hero-bottom'));
+function syncTopbarH(){const tb=document.querySelector('.topbar');if(tb)document.documentElement.style.setProperty('--topbar-h',tb.offsetHeight+'px');}
+syncTopbarH();
+window.addEventListener('resize',syncTopbarH);
+
 const hmbBtn=document.getElementById('hmbBtn');
 const drawer=document.getElementById('drawer');
 const overlay=document.getElementById('drawerOverlay');
