@@ -32,8 +32,8 @@
 html{scroll-behavior:smooth}
 body{font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;background:#FFFFFF;color:#1A1A1A;line-height:1.8;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-bottom:80px}
 :root{
-  --green:#1D9E75;--dark:#1A1A1A;--mid:#555555;--light:#888888;
-  --bg:#FFFFFF;--bg2:#F7F7F5;--border:#E5E5E5;
+  --green:#D4537E;--dark:#1A1A1A;--mid:#555555;--light:#888888;
+  --bg:#FFFFFF;--bg2:#FCEFF4;--border:#F0DCE4;
   --sp:20px;--r:4px;--max:640px;
 }
 img{max-width:100%;height:auto;display:block}
@@ -92,14 +92,13 @@ body.menu-open{overflow:hidden}
 
 /* ── SCROLL ARROW ── */
 @keyframes scrollBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
-.scroll-arrow{display:block;text-align:center;font-size:20px;color:rgba(255,255,255,.6);animation:scrollBounce 1.5s ease-in-out infinite;margin-top:40px}
+.scroll-arrow{display:block;text-align:center;font-size:20px;color:var(--light);animation:scrollBounce 1.5s ease-in-out infinite;margin-top:24px}
 
 /* ── HERO ── */
-.hero{position:relative;overflow:hidden;padding:calc(36px + 52px + 32px) var(--sp) 60px;text-align:center;background:#1c221e}
-.hero-photo{position:absolute;inset:0;z-index:0}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center}
-.hero-shade{position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(10,10,8,.45) 0%,rgba(10,10,8,.15) 60%,rgba(10,10,8,.05) 100%)}
-.hero-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto}
+.hero{position:relative;overflow:hidden;padding:calc(36px + 52px + 32px) 0 60px;text-align:center;background:#fff}
+.hero-photo{width:100%;line-height:0}
+.hero-photo img{width:100%;height:auto;display:block}
+.hero-inner{position:relative;max-width:var(--max);margin:0 auto;padding:0 var(--sp)}
 .hero-eyebrow{font-size:13px;color:rgba(255,255,255,.6);letter-spacing:.08em;font-weight:500;margin-bottom:20px}
 .hero-h1{font-size:clamp(22px,5.5vw,34px);font-weight:600;line-height:1.55;color:#fff;margin-bottom:24px;letter-spacing:.02em}
 .hero-sub{font-size:16px;color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:40px}
@@ -172,7 +171,7 @@ body.menu-open{overflow:hidden}
 .compare-table th{background:var(--bg2);font-weight:600;font-size:11px;letter-spacing:.04em;color:var(--dark)}
 .compare-table th:first-child,.compare-table td:first-child{text-align:left;font-size:12px;color:var(--mid);padding-left:12px;min-width:120px}
 .compare-table th:last-child{background:var(--green);color:#fff;font-weight:bold;position:relative}
-.compare-table td:last-child{background:rgba(29,158,117,.04)}
+.compare-table td:last-child{background:rgba(212,83,126,.04)}
 .compare-best{color:var(--green);font-weight:700;font-size:15px}
 .compare-ok{color:var(--mid);font-size:14px}
 .compare-ng{color:#bbb;font-size:14px}
@@ -208,8 +207,8 @@ body.menu-open{overflow:hidden}
 /* ── PLANS ── */
 .plans-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
 .plan-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:26px 14px;text-align:center;position:relative}
-.plan-card.popular{border:2px solid #1D9E75;background:#F0FBF7}
-.plan-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:#1D9E75;color:#fff;font-size:11px;padding:3px 12px;border-radius:999px;white-space:nowrap}
+.plan-card.popular{border:2px solid #D4537E;background:#F0FBF7}
+.plan-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:#D4537E;color:#fff;font-size:11px;padding:3px 12px;border-radius:999px;white-space:nowrap}
 .plan-freq{font-size:11px;color:var(--light);letter-spacing:.12em;margin-bottom:10px}
 .plan-price{font-family:'Outfit',sans-serif;font-size:26px;font-weight:400;color:var(--dark);line-height:1;margin-bottom:4px}
 .plan-price sup{font-size:11px;vertical-align:top;margin-top:5px}
@@ -231,7 +230,7 @@ body.menu-open{overflow:hidden}
 .flow-body{padding-top:8px}
 .flow-ttl{font-size:15px;font-weight:600;color:var(--dark);margin-bottom:4px}
 .flow-desc{font-size:14px;color:var(--mid);line-height:1.9}
-.flow-time{display:inline-block;font-size:10px;letter-spacing:.1em;color:var(--green);background:rgba(29,158,117,.08);padding:2px 8px;border-radius:2px;margin-bottom:6px}
+.flow-time{display:inline-block;font-size:10px;letter-spacing:.1em;color:var(--green);background:rgba(212,83,126,.08);padding:2px 8px;border-radius:2px;margin-bottom:6px}
 
 /* ── FAQ ── */
 .faq-list{display:flex;flex-direction:column;gap:0}
@@ -328,28 +327,9 @@ footer{background:#1A1A1A;padding:36px var(--sp) 20px;text-align:center}
 
 <!-- ══ HERO ══ -->
 <section class="hero" id="top">
-  <div class="hero-photo"><picture><source srcset="images/conditioning-mob.webp" type="image/webp"><img src="images/conditioning-mob.jpg" alt="" fetchpriority="high"></picture></div>
-  <div class="hero-shade"></div>
-  <div class="hero-inner">
-    <p class="hero-eyebrow">猫背・巻き肩コンプレックスから脱却したい方へ</p>
-    <h1 class="hero-h1">猫背と言われ続けた。<br>でも、何をしても<br>変わらなかった。</h1>
-    <p class="hero-sub">姿勢が崩れる本当の原因を直すから、<br>変わり続ける。</p>
-    <div class="hero-price">
-      <span class="hero-price-orig">通常 ¥13,200</span>
-      <span class="hero-price-main">¥5,500</span>
-      <span class="hero-price-note">（初回体験 / 90分 / 税込）</span>
-    </div>
-    <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="btn-main" style="margin-top:32px;max-width:360px" id="heroCta">体験を予約する（当日入会で0円）</a>
-    <div class="hero-badges" style="margin-top:20px;margin-bottom:12px">
-      <div class="hero-badge">
-        <div class="hero-badge-num">90<span class="hero-badge-unit">%</span></div>
-        <div class="hero-badge-label">体験→入会率</div>
-      </div>
-      <div class="hero-badge">
-        <div class="hero-badge-num">13.1<span class="hero-badge-unit" style="font-size:.9rem">ヶ月</span></div>
-        <div class="hero-badge-label">平均継続期間</div>
-      </div>
-    </div>
+  <div class="hero-photo"><picture><source srcset="images/hero-posture-promo.webp" type="image/webp"><img src="images/hero-posture-promo.jpg" alt="5toolgym 薬院・赤坂 猫背・巻き肩・反り腰を動きを鍛えて改善するパーソナルトレーニングジム" fetchpriority="high"></picture></div>
+  <div class="hero-inner" style="padding-top:24px">
+    <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="btn-main" style="max-width:360px" id="heroCta">体験を予約する（当日入会で0円）</a>
     <p class="btn-sub">無理な勧誘なし　／　当日キャンセルOK　／　相談だけでもOK</p>
     <span class="scroll-arrow" aria-hidden="true">&#8595;</span>
   </div>
@@ -556,18 +536,18 @@ footer{background:#1A1A1A;padding:36px var(--sp) 20px;text-align:center}
             <th>項目</th>
             <th>整骨院・整体</th>
             <th>ストレッチ専門店</th>
-            <th><span style="display:block;font-size:10px;background:white;color:#1D9E75;border-radius:999px;padding:2px 8px;margin-bottom:4px;font-weight:bold;">おすすめ</span>5toolgym</th>
+            <th><span style="display:block;font-size:10px;background:white;color:#D4537E;border-radius:999px;padding:2px 8px;margin-bottom:4px;font-weight:bold;">おすすめ</span>5toolgym</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>姿勢の根本原因を特定する</td><td class="compare-ng">△</td><td class="compare-ng">△</td><td class="compare-best"><span style="color:#1D9E75;font-weight:bold;">◎</span></td></tr>
-          <tr><td>動きのクセを修正する</td><td class="compare-ng">×</td><td class="compare-ng">×</td><td class="compare-best"><span style="color:#1D9E75;font-weight:bold;">◎</span></td></tr>
-          <tr><td>不調（肩こり・首こり）への対応</td><td class="compare-ok">◎</td><td class="compare-ok">◎</td><td class="compare-best"><span style="color:#1D9E75;font-weight:bold;">◎</span></td></tr>
-          <tr><td>日常動作まで改善する</td><td class="compare-ng">×</td><td class="compare-ng">×</td><td class="compare-best"><span style="color:#1D9E75;font-weight:bold;">◎</span></td></tr>
-          <tr><td>マンツーマン指導</td><td class="compare-ng">△</td><td class="compare-ng">△</td><td class="compare-best"><span style="color:#1D9E75;font-weight:bold;">◎</span></td></tr>
-          <tr><td>自分で動いて身体を変える</td><td class="compare-ng">×</td><td class="compare-ng">×</td><td class="compare-best"><span style="color:#1D9E75;font-weight:bold;">◎</span></td></tr>
-          <tr><td>効果が日常生活に持続する</td><td class="compare-ng">△</td><td class="compare-ng">△</td><td class="compare-best"><span style="color:#1D9E75;font-weight:bold;">◎</span></td></tr>
-          <tr><td>完全個室</td><td class="compare-ng">△</td><td class="compare-ng">△</td><td class="compare-best"><span style="color:#1D9E75;font-weight:bold;">◎</span></td></tr>
+          <tr><td>姿勢の根本原因を特定する</td><td class="compare-ng">△</td><td class="compare-ng">△</td><td class="compare-best"><span style="color:#D4537E;font-weight:bold;">◎</span></td></tr>
+          <tr><td>動きのクセを修正する</td><td class="compare-ng">×</td><td class="compare-ng">×</td><td class="compare-best"><span style="color:#D4537E;font-weight:bold;">◎</span></td></tr>
+          <tr><td>不調（肩こり・首こり）への対応</td><td class="compare-ok">◎</td><td class="compare-ok">◎</td><td class="compare-best"><span style="color:#D4537E;font-weight:bold;">◎</span></td></tr>
+          <tr><td>日常動作まで改善する</td><td class="compare-ng">×</td><td class="compare-ng">×</td><td class="compare-best"><span style="color:#D4537E;font-weight:bold;">◎</span></td></tr>
+          <tr><td>マンツーマン指導</td><td class="compare-ng">△</td><td class="compare-ng">△</td><td class="compare-best"><span style="color:#D4537E;font-weight:bold;">◎</span></td></tr>
+          <tr><td>自分で動いて身体を変える</td><td class="compare-ng">×</td><td class="compare-ng">×</td><td class="compare-best"><span style="color:#D4537E;font-weight:bold;">◎</span></td></tr>
+          <tr><td>効果が日常生活に持続する</td><td class="compare-ng">△</td><td class="compare-ng">△</td><td class="compare-best"><span style="color:#D4537E;font-weight:bold;">◎</span></td></tr>
+          <tr><td>完全個室</td><td class="compare-ng">△</td><td class="compare-ng">△</td><td class="compare-best"><span style="color:#D4537E;font-weight:bold;">◎</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -671,6 +651,17 @@ footer{background:#1A1A1A;padding:36px var(--sp) 20px;text-align:center}
           </div>
         </div>
         <p class="tc-story">女性の身体は、年齢・ホルモン・産後によってまったく変わります。「同じやり方が通用しない」という感覚、ありませんか？<br><br>女性特有の悩みに特化した指導をしています。「言いにくいこと」も話してもらえる関係を作ることが、一番大事だと思っています。</p>
+      </div>
+      <div class="tc">
+        <div class="tc-head">
+          <div class="tc-photo"><picture><source srcset="images/trainer-ami.webp" type="image/webp"><img loading="lazy" src="images/trainer-ami.jpg" alt="Ami"></picture></div>
+          <div>
+            <p class="tc-role">PERSONAL TRAINER</p>
+            <p class="tc-name">Ami</p>
+            <p class="tc-tag">継続サポートが得意</p>
+          </div>
+        </div>
+        <p class="tc-story">「体は資本」と言われるように、健康的な身体は幸せな生活の土台だと思っています。<br><br>学生時代から続けてきたバスケットボールで培った継続力を活かし、姿勢改善も一歩ずつ、無理なく続けられる形でサポートします。</p>
       </div>
     </div>
   </div>
@@ -876,8 +867,8 @@ footer{background:#1A1A1A;padding:36px var(--sp) 20px;text-align:center}
   <div class="sec-inner">
     <h2 class="sec-ttl">店舗情報</h2>
     <div class="access-map" id="mapWrap" onclick="loadMap()">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#1D9E75"/></svg>
-      <span style="font-size:13px;color:#1D9E75;font-weight:500;letter-spacing:.06em">📍 地図を見る（タップで表示）</span>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#D4537E"/></svg>
+      <span style="font-size:13px;color:#D4537E;font-weight:500;letter-spacing:.06em">📍 地図を見る（タップで表示）</span>
     </div>
     <dl class="access-dl">
       <dt class="access-dt">住所</dt>

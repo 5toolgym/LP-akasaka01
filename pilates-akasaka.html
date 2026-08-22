@@ -35,10 +35,10 @@
 html{scroll-behavior:smooth}
 body{font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif;background:#F7F5F0;color:#2D2D2D;line-height:1.8;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-bottom:80px}
 :root{
-  --main:#7B9E87;--accent:#4F7058;--accent-dark:#2C3830;
+  --main:#E9A0BC;--accent:#D4537E;--accent-dark:#3D1E2B;
   --dark:#2D2D2D;--mid:#4D4D4D;--text:#2D2D2D;--light:#6B6B6B;
-  --bg:#F7F5F0;--bg2:#EFEFEB;--white:#FFFFFF;
-  --border:#E0DDD8;--border-main:rgba(123,158,135,0.25);
+  --bg:#FCF9FA;--bg2:#FCEFF4;--white:#FFFFFF;
+  --border:#E0DDD8;--border-main:rgba(233,160,188,0.25);
   --sp:20px;--r:4px;--max:640px;
 }
 img{max-width:100%;height:auto;display:block}
@@ -87,7 +87,7 @@ body.menu-open .btn-main{animation:none;transform:none}
 .sec-bar{width:28px;height:1px;background:var(--main);margin:16px 0 32px}
 
 /* ── BUTTONS ── */
-.btn-main{display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;padding:18px 24px;border-radius:var(--r);font-size:15px;font-weight:700;letter-spacing:.06em;box-shadow:0 4px 20px rgba(79,112,88,.3);width:100%;max-width:480px;margin:0 auto;text-align:center;transition:box-shadow .2s}
+.btn-main{display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;padding:18px 24px;border-radius:var(--r);font-size:15px;font-weight:700;letter-spacing:.06em;box-shadow:0 4px 20px rgba(212,83,126,.3);width:100%;max-width:480px;margin:0 auto;text-align:center;transition:box-shadow .2s}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}
 .btn-main{animation:pulse 2.5s ease-in-out infinite}
 .btn-main:active{animation:none;transform:translateY(1px)}
@@ -101,21 +101,10 @@ body.menu-open .btn-main{animation:none;transform:none}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 
 /* ── HERO ── */
-.hero{position:relative;isolation:isolate;min-height:100svh;display:flex;flex-direction:column;padding:calc(52px + 20px) var(--sp) calc(env(safe-area-inset-bottom, 0px) + 32px);overflow:hidden;background:#1c221e}
-.hero-photo{position:absolute;inset:0;z-index:0}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
-.hero-shade{position:absolute;inset:0;z-index:1;background:rgba(0,0,0,.55)}
-.hero-top{position:relative;z-index:2;padding-top:8px;margin-bottom:0}
-.hero-trust{display:flex;gap:10px;flex-wrap:wrap}
-.hero-trust-item{background:rgba(123,158,135,.15);border:1px solid rgba(123,158,135,.38);padding:8px 14px;border-radius:var(--r)}
-.hero-trust-item strong{font-family:'Outfit',sans-serif;font-size:18px;font-weight:400;color:#A8C9B4;display:block;line-height:1.1;margin-bottom:2px}
-.hero-trust-item span{font-size:10px;color:rgba(255,255,255,.6);letter-spacing:.06em}
-.hero-body{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:center;max-width:var(--max);width:100%;padding:24px 0}
-.hero-eyebrow{font-size:10px;letter-spacing:.4em;color:#9ABFA8;margin-bottom:14px;font-weight:400}
-.hero-h1{font-family:'Noto Serif JP',serif;font-size:clamp(30px,8vw,50px);font-weight:400;line-height:1.75;color:#fff;margin-bottom:18px;letter-spacing:.02em}
-.hero-h1 em{font-style:normal;color:#9ABFA8}
-.hero-sub{font-size:16px;color:rgba(255,255,255,.65);line-height:1.95;margin-bottom:0;letter-spacing:.04em}
-#heroCta{position:relative;z-index:2;width:100%}
+.hero{position:relative;overflow:hidden;padding:calc(52px + 20px) 0 calc(env(safe-area-inset-bottom, 0px) + 32px);background:#fff}
+.hero-photo{width:100%;line-height:0}
+.hero-photo img{width:100%;height:auto;display:block}
+#heroCta{position:relative;width:100%;max-width:var(--max);margin:0 auto;padding:24px var(--sp) 0}
 
 /* ── TARGET ── */
 .target{background:var(--bg2);padding:48px var(--sp)}
@@ -130,14 +119,14 @@ body.menu-open .btn-main{animation:none;transform:none}
 .empathy-inner{max-width:var(--max);margin:0 auto}
 .empathy-body{display:flex;flex-direction:column;gap:36px}
 .empathy-p{font-family:'Noto Serif JP',serif;font-size:clamp(16px,4.2vw,20px);font-weight:300;color:rgba(255,255,255,.75);line-height:2.15;letter-spacing:.04em}
-.empathy-close{font-family:'Noto Serif JP',serif;font-size:clamp(16px,4.2vw,20px);font-weight:400;color:#fff;line-height:2.1;letter-spacing:.04em;border-top:1px solid rgba(123,158,135,.25);padding-top:36px;margin-top:-4px}
+.empathy-close{font-family:'Noto Serif JP',serif;font-size:clamp(16px,4.2vw,20px);font-weight:400;color:#fff;line-height:2.1;letter-spacing:.04em;border-top:1px solid rgba(233,160,188,.25);padding-top:36px;margin-top:-4px}
 .empathy-close em{font-style:normal;color:#9ABFA8}
 
 /* ── PAIN POINTS ── */
 .pain{background:var(--accent-dark);padding:0 var(--sp) 80px;margin-top:-14px}
 .pain-inner{max-width:var(--max);margin:0 auto}
 .pain-ttl{font-family:'Noto Serif JP',serif;font-size:21px;font-weight:400;color:#fff;margin-bottom:28px;letter-spacing:.04em;line-height:1.7}
-.pain-list{display:flex;flex-direction:column;gap:1px;background:rgba(123,158,135,.18);margin-bottom:32px}
+.pain-list{display:flex;flex-direction:column;gap:1px;background:rgba(233,160,188,.18);margin-bottom:32px}
 .pain-item{background:rgba(44,56,48,.98);padding:18px 24px;display:flex;align-items:center;gap:14px;font-size:15px;color:rgba(255,255,255,.84);line-height:1.55}
 .pain-item::before{content:'';width:5px;height:5px;background:var(--main);border-radius:50%;flex-shrink:0}
 .pain-close{font-size:15px;color:rgba(255,255,255,.42);text-align:center;line-height:1.8}
@@ -261,7 +250,7 @@ body.menu-open .btn-main{animation:none;transform:none}
 .flow-body{padding-top:8px}
 .flow-ttl{font-size:16px;font-weight:500;color:var(--dark);margin-bottom:4px}
 .flow-desc{font-size:15px;color:var(--mid);line-height:1.9}
-.flow-time{display:inline-block;font-size:10px;letter-spacing:.1em;color:var(--accent);background:rgba(79,112,88,.1);padding:2px 8px;border-radius:2px;margin-bottom:6px}
+.flow-time{display:inline-block;font-size:10px;letter-spacing:.1em;color:var(--accent);background:rgba(212,83,126,.1);padding:2px 8px;border-radius:2px;margin-bottom:6px}
 
 /* ── ANXIETY ── */
 .anxiety{background:var(--bg);padding:80px var(--sp)}
@@ -305,12 +294,12 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
 /* ── STOP BLOCK ── */
 .stop-block{background:var(--accent-dark);padding:48px var(--sp)}
 .stop-block-inner{max-width:var(--max);margin:0 auto;text-align:center}
-.stop-block-line{width:80px;height:1px;background:rgba(123,158,135,.4);margin:0 auto 20px}
+.stop-block-line{width:80px;height:1px;background:rgba(233,160,188,.4);margin:0 auto 20px}
 .stop-block-text{font-family:'Noto Serif JP',serif;font-size:clamp(20px,5.5vw,26px);font-weight:300;color:rgba(255,255,255,.88);line-height:2.2;letter-spacing:.04em}
 .stop-block-text em{font-style:normal;color:#9ABFA8;font-weight:400}
 
 /* ── PILATES ALERT ── */
-.pilates-alert{background:rgba(79,112,88,.06);border:1px solid rgba(79,112,88,.3);border-radius:var(--r);padding:24px 20px;margin-bottom:28px;text-align:center}
+.pilates-alert{background:rgba(212,83,126,.06);border:1px solid rgba(212,83,126,.3);border-radius:var(--r);padding:24px 20px;margin-bottom:28px;text-align:center}
 .pilates-alert-text{font-family:'Noto Serif JP',serif;font-size:clamp(17px,4.5vw,22px);font-weight:400;color:var(--dark);line-height:1.85;letter-spacing:.04em}
 .pilates-alert-text em{font-style:normal;color:var(--accent)}
 
@@ -341,7 +330,7 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
 .compare-table th{background:var(--bg2);font-weight:500;font-size:11px;letter-spacing:.04em;color:var(--dark)}
 .compare-table th:first-child,.compare-table td:first-child{text-align:left;font-size:12px;color:var(--mid);padding-left:12px;min-width:120px}
 .compare-table th:last-child{background:var(--accent);color:#fff}
-.compare-table td:last-child{background:rgba(79,112,88,.05)}
+.compare-table td:last-child{background:rgba(212,83,126,.05)}
 .compare-best{color:var(--accent);font-weight:700;font-size:15px}
 .compare-ok{color:var(--mid);font-size:14px}
 .compare-ng{color:var(--light);font-size:14px;opacity:.7}
@@ -360,7 +349,7 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
 .letter-text:last-of-type{margin-bottom:0}
 .letter-sig{font-family:'Zen Kurenaido',sans-serif;font-size:15px;line-height:2.4;color:#3a3a3a;text-align:right;margin-top:36px}
 @media(max-width:640px){.letter-inner{padding:32px 20px}.letter-text,.letter-sig{font-size:14px}}
-.scroll-arrow{display:inline-block;font-style:normal;font-size:18px;color:rgba(255,255,255,.55);animation:scrollBounce 1.5s ease-in-out infinite}
+.scroll-arrow{display:inline-block;font-style:normal;font-size:18px;color:var(--light);animation:scrollBounce 1.5s ease-in-out infinite}
 @keyframes scrollBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 .compare-table th:last-child{background-color:#1D9E75;color:white;font-weight:bold;position:relative}
 </style>
@@ -409,27 +398,7 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
 <!-- ══ HERO ══ -->
 <section class="hero" id="top">
   <div class="hero-photo">
-    <img fetchpriority="high" decoding="async" src="images/hero-pilates-main.webp" alt="5toolgym 赤坂店 パーソナルトレーニング">
-  </div>
-  <div class="hero-shade"></div>
-  <div class="hero-top">
-    <div class="hero-trust">
-      <div class="hero-trust-item">
-        <strong>90%</strong>
-        <span>体験→入会率</span>
-      </div>
-      <div class="hero-trust-item">
-        <strong>13.1<span style="font-size:12px">ヶ月</span></strong>
-        <span>平均継続期間</span>
-      </div>
-    </div>
-    <p style="font-size:10px;color:rgba(255,255,255,.38);margin-top:6px;letter-spacing:.04em">※2022年10月〜2026年4月・5toolgym会員データ（薬院店・赤坂店合算）</p>
-  </div>
-  <div class="hero-body">
-    <p class="hero-eyebrow">赤坂・大濠公園エリアのピラティス経験者の方へ</p>
-    <h1 class="hero-h1">ピラティスで<br><em>姿勢</em>は変わった。<br>でも体型は<br>変わらなかった。</h1>
-    <p class="hero-sub">完全個室・マンツーマン専用スタジオ</p>
-    <p class="hero-sub">ピラティスの次に必要な運動が、<br>ここにあります。</p>
+    <picture><source srcset="images/hero-pilates-promo.webp" type="image/webp"><img fetchpriority="high" decoding="async" src="images/hero-pilates-promo.jpg" alt="5toolgym 赤坂・大濠公園店 ピラティスの次のステップへ 完全個室パーソナルトレーニング"></picture>
   </div>
   <div id="heroCta">
     <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="btn-main">体験を予約する（当日入会で0円）</a>
@@ -512,7 +481,7 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
       <div class="sol-step">
         <div class="sol-step-content">
           <div class="sol-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 2.38.86 4.56 2.27 6.22L12 22l4.73-6.78C18.14 13.56 19 11.38 19 9c0-3.87-3.13-7-7-7z" stroke="#7B9E87" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 2.38.86 4.56 2.27 6.22L12 22l4.73-6.78C18.14 13.56 19 11.38 19 9c0-3.87-3.13-7-7-7z" stroke="#E9A0BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div>
             <p class="sol-ttl">身体の使い方（動き）を整える</p>
@@ -524,7 +493,7 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
       <div class="sol-step">
         <div class="sol-step-content">
           <div class="sol-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#7B9E87" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="#7B9E87" stroke-width="1.5"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#E9A0BC" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="#E9A0BC" stroke-width="1.5"/></svg>
           </div>
           <div>
             <p class="sol-ttl">余計な負担が取れて下半身がスッキリする</p>
@@ -536,7 +505,7 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
       <div class="sol-step">
         <div class="sol-step-content">
           <div class="sol-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#7B9E87" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#E9A0BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div>
             <p class="sol-ttl">代謝が上がる筋肉がつく</p>
@@ -548,7 +517,7 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
       <div class="sol-step">
         <div class="sol-step-content">
           <div class="sol-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#7B9E87" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#E9A0BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <div>
             <p class="sol-ttl">しっかり食べても、太りにくくなる</p>
@@ -799,7 +768,7 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
       <div class="vc">
         <div class="vc-head">
           <div class="vc-avatar">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7B9E87" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E9A0BC" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </div>
           <div>
             <div style="color:#EF9F27;font-size:13px;margin-bottom:4px;">★★★★★</div>
@@ -815,7 +784,7 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
       <div class="vc">
         <div class="vc-head">
           <div class="vc-avatar">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7B9E87" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E9A0BC" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </div>
           <div>
             <div style="color:#EF9F27;font-size:13px;margin-bottom:4px;">★★★★★</div>
@@ -831,7 +800,7 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
       <div class="vc">
         <div class="vc-head">
           <div class="vc-avatar">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7B9E87" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E9A0BC" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           </div>
           <div>
             <div style="color:#EF9F27;font-size:13px;margin-bottom:4px;">★★★★★</div>
@@ -877,6 +846,17 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
           </div>
         </div>
         <p class="tc-story">女性の身体は、年齢・ホルモン・産後によってまったく変わります。「同じやり方が通用しない」という感覚、ありませんか？<br><br>女性特有の悩みに特化した指導をしています。「言いにくいこと」も話してもらえる関係を作ることが、一番大事だと思っています。</p>
+      </div>
+      <div class="tc">
+        <div class="tc-head">
+          <div class="tc-photo"><picture><source srcset="images/trainer-ami.webp" type="image/webp"><img loading="lazy" src="images/trainer-ami.jpg" alt="Ami"></picture></div>
+          <div>
+            <p class="tc-role">PERSONAL TRAINER</p>
+            <p class="tc-name">Ami</p>
+            <p class="tc-tag">継続サポートが得意</p>
+          </div>
+        </div>
+        <p class="tc-story">日本一周やオーストラリアでのワーキングホリデーなど、様々な経験を通して価値観を広げてきました。<br><br>「体は資本」を信条に、ピラティスを通してみなさまが自分の身体と向き合うお手伝いをします。継続で必ず身体は変わります。</p>
       </div>
     </div>
   </div>
@@ -1083,8 +1063,8 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
     <h2 class="sec-ttl">店舗情報</h2>
     <div class="sec-bar"></div>
     <div class="access-map" id="mapWrap" onclick="loadMap()">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#4F7058"/></svg>
-      <span style="font-size:13px;color:#4F7058;font-weight:500;letter-spacing:.06em">📍 地図を見る（タップで表示）</span>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#D4537E"/></svg>
+      <span style="font-size:13px;color:#D4537E;font-weight:500;letter-spacing:.06em">📍 地図を見る（タップで表示）</span>
     </div>
     <dl class="access-dl">
       <dt class="access-dt">住所</dt>
