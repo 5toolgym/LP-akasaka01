@@ -104,7 +104,11 @@ body.menu-open .btn-main{animation:none;transform:none}
 .hero{position:relative;overflow:hidden;padding:calc(52px + 20px) 0 calc(env(safe-area-inset-bottom, 0px) + 32px);background:#fff}
 .hero-photo{width:100%;line-height:0}
 .hero-photo img{width:100%;height:auto;display:block}
-#heroCta{position:relative;width:100%;max-width:var(--max);margin:0 auto;padding:24px var(--sp) 0}
+.hero-trust{display:flex;gap:10px;justify-content:center;max-width:var(--max);margin:0 auto;padding:20px var(--sp) 0}
+.hero-trust-item{flex:1;max-width:160px;background:var(--bg2);border:1px solid var(--border);padding:10px 16px;border-radius:var(--r);text-align:center}
+.hero-trust-item strong{font-family:'Outfit',sans-serif;font-size:20px;font-weight:700;color:var(--accent);display:block;line-height:1.1;margin-bottom:2px}
+.hero-trust-item span{font-size:11px;color:var(--light);letter-spacing:.04em}
+#heroCta{position:relative;width:100%;max-width:var(--max);margin:0 auto;padding:16px var(--sp) 0}
 
 /* ── TARGET ── */
 .target{background:var(--bg2);padding:48px var(--sp)}
@@ -399,6 +403,10 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
 <section class="hero" id="top">
   <div class="hero-photo">
     <picture><source srcset="images/hero-pilates-promo.webp" type="image/webp"><img fetchpriority="high" decoding="async" src="images/hero-pilates-promo.jpg" alt="5toolgym 赤坂・大濠公園店 ピラティスの次のステップへ 完全個室パーソナルトレーニング"></picture>
+  </div>
+  <div class="hero-trust">
+    <div class="hero-trust-item"><strong>91%</strong><span>体験→入会率</span></div>
+    <div class="hero-trust-item"><strong>14<span style="font-size:12px">ヶ月</span></strong><span>平均継続期間</span></div>
   </div>
   <div id="heroCta">
     <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="btn-main">体験を予約する（当日入会で0円）</a>
@@ -814,7 +822,7 @@ footer{background:#2D2D2D;padding:36px var(--sp) 20px;text-align:center}
         </div>
       </div>
     </div>
-    <p style="font-size:11px;color:var(--light);text-align:center;margin-top:16px;letter-spacing:.04em">※ 個人の感想です。効果には個人差があります。</p>
+    <p style="font-size:11px;color:var(--light);text-align:center;margin-top:16px;letter-spacing:.04em">※薬院店・赤坂店合算の実績です。個人の感想です。効果には個人差があります。</p>
   </div>
 </section>
 
