@@ -39,9 +39,9 @@ body{
   padding-bottom:72px;
 }
 :root{
-  --w:#FFFFFF;--bg:#F8F7F4;--bg2:#F0EDE8;
+  --w:#FFFFFF;--bg:#F5F0EA;--bg2:#EFE8DE;
   --border:#E4E0D9;--text:#1C1B18;--mid:#3A3730;--light:#6E6B68;
-  --green:#D4537E;--green2:#C43F6B;--green-pale:#FCEFF4;
+  --green:#B5707A;--green2:#985A63;--green-pale:#FCEFF4;
   --gold:#C8A86B;
   --sp:20px;--sec:60px;--r:4px;
 }
@@ -150,7 +150,7 @@ body.menu-open #sbar{display:none!important}
   background:var(--green);color:#fff;
   padding:18px var(--sp);border-radius:var(--r);
   font-size:15px;font-weight:500;letter-spacing:.05em;
-  text-decoration:none;box-shadow:0 6px 28px rgba(212,83,126,.45);
+  text-decoration:none;box-shadow:0 6px 28px rgba(181,112,122,.45);
   margin-bottom:8px;
 }
 .hero-price{font-size:10px;color:rgba(255,255,255,.4);text-align:center;letter-spacing:.06em}
@@ -383,7 +383,7 @@ details[open] .faq-icon{transform:rotate(45deg);border-color:var(--green)}
   padding:18px;border-radius:var(--r);
   font-size:15px;font-weight:500;letter-spacing:.06em;
   text-decoration:none;margin-bottom:10px;
-  box-shadow:0 6px 28px rgba(212,83,126,.35);
+  box-shadow:0 6px 28px rgba(181,112,122,.35);
 }
 .fcta-note{font-size:11px;color:rgba(255,255,255,.22);letter-spacing:.05em}
 
@@ -395,7 +395,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 .foot-copy{font-size:10px;color:rgba(255,255,255,.16);letter-spacing:.08em}
 
 /* ══ TRIAL ══ */
-.trial{background:var(--green-pale);padding:var(--sec) var(--sp);border-top:1px solid rgba(212,83,126,.12)}
+.trial{background:var(--green-pale);padding:var(--sec) var(--sp);border-top:1px solid rgba(181,112,122,.12)}
 .trial-card{background:var(--w);border:1px solid var(--border);border-radius:8px;padding:28px 20px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,.06)}
 .trial-lbl{font-size:10px;letter-spacing:.18em;color:var(--light);margin-bottom:6px}
 .trial-del{font-size:12px;color:var(--light);text-decoration:line-through;margin-bottom:3px}
@@ -406,7 +406,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 .trial-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border);font-size:16px;color:var(--mid);font-weight:300}
 .ck{width:18px;height:18px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .ck::after{content:'';display:block;width:7px;height:4px;border-left:1.5px solid #fff;border-bottom:1.5px solid #fff;transform:rotate(-45deg) translateY(-1px)}
-.trial-btn{display:flex;align-items:center;justify-content:center;background:var(--green);color:#fff;padding:17px;border-radius:var(--r);font-size:15px;font-weight:500;letter-spacing:.06em;text-decoration:none;margin-bottom:10px;box-shadow:0 4px 20px rgba(212,83,126,.3)}
+.trial-btn{display:flex;align-items:center;justify-content:center;background:var(--green);color:#fff;padding:17px;border-radius:var(--r);font-size:15px;font-weight:500;letter-spacing:.06em;text-decoration:none;margin-bottom:10px;box-shadow:0 4px 20px rgba(181,112,122,.3)}
 .trial-note{font-size:11px;color:var(--light);letter-spacing:.05em}
 
 /* ══ CTA ANIMATION ══ */
@@ -420,8 +420,8 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   96%{transform:translateX(0)}
 }
 @keyframes cta-pulse{
-  0%,100%{box-shadow:0 6px 28px rgba(212,83,126,.45)}
-  50%{box-shadow:0 6px 36px rgba(212,83,126,.7)}
+  0%,100%{box-shadow:0 6px 28px rgba(181,112,122,.45)}
+  50%{box-shadow:0 6px 36px rgba(181,112,122,.7)}
 }
 .hero-btn{animation:cta-nudge 4s ease-in-out infinite, cta-pulse 2.5s ease-in-out infinite}
 .trial-btn{animation:cta-nudge 4.5s ease-in-out infinite 0.3s}
@@ -470,9 +470,9 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 /* ── LINE primary CTA ── */
 .line-cta{display:flex;align-items:center;justify-content:center;gap:8px;background:#06C755!important;color:#fff!important;padding:17px 20px;border-radius:8px;font-size:15px;font-weight:700;letter-spacing:.05em;text-decoration:none;width:100%;max-width:480px;margin:0 auto 10px;box-shadow:0 4px 16px rgba(6,199,85,.25);border:none;box-sizing:border-box}
 .line-cta:active{transform:translateY(1px)}
-.rsv-split{max-width:480px;margin:0 auto}.rsv-split-ttl{font-size:12px;color:#D4537E;font-weight:700;text-align:center;margin:4px 0 6px;letter-spacing:.04em}.rsv-split-btns{display:flex;gap:8px}.rsv-btn{flex:1;display:flex;align-items:center;justify-content:center;background:transparent;color:#D4537E;border:1.5px solid #D4537E;border-radius:8px;font-size:13px;font-weight:700;padding:12px 8px;text-decoration:none;text-align:center;box-sizing:border-box}.rsv-btn:active{transform:translateY(1px)}.why .rsv-split-ttl,.fcta .rsv-split-ttl{color:#fff}.why .rsv-btn,.fcta .rsv-btn{color:#fff;border-color:rgba(255,255,255,.8)}.why .rsv-note,.fcta .rsv-note{color:rgba(255,255,255,.7)}
+.rsv-split{max-width:480px;margin:0 auto}.rsv-split-ttl{font-size:12px;color:#B5707A;font-weight:700;text-align:center;margin:4px 0 6px;letter-spacing:.04em}.rsv-split-btns{display:flex;gap:8px}.rsv-btn{flex:1;display:flex;align-items:center;justify-content:center;background:transparent;color:#B5707A;border:1.5px solid #B5707A;border-radius:8px;font-size:13px;font-weight:700;padding:12px 8px;text-decoration:none;text-align:center;box-sizing:border-box}.rsv-btn:active{transform:translateY(1px)}.why .rsv-split-ttl,.fcta .rsv-split-ttl{color:#fff}.why .rsv-btn,.fcta .rsv-btn{color:#fff;border-color:rgba(255,255,255,.8)}.why .rsv-note,.fcta .rsv-note{color:rgba(255,255,255,.7)}
 .rsv-note{font-size:11px;color:#888;line-height:1.7;text-align:center;margin:8px auto 0}
-.line-cta + a[href*="kanzashi"]{background:transparent!important;color:#D4537E!important;border:1.5px solid #D4537E!important;box-shadow:none!important;animation:none!important;font-size:13px!important;padding:12px 16px!important;max-width:480px;margin-left:auto;margin-right:auto}
+.line-cta + a[href*="kanzashi"]{background:transparent!important;color:#B5707A!important;border:1.5px solid #B5707A!important;box-shadow:none!important;animation:none!important;font-size:13px!important;padding:12px 16px!important;max-width:480px;margin-left:auto;margin-right:auto}
 .line-cta + a.btn-white,.line-cta + a.fcta-btn{color:#fff!important;border-color:rgba(255,255,255,.8)!important}
 
 /* ── renewal 2026-11 ── */
@@ -483,83 +483,150 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 .hero-h1{font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:clamp(26px,7.4vw,34px);font-weight:500;line-height:1.45;letter-spacing:.04em;margin:0 0 12px;color:#fff}
 .hero-sub{font-size:13px;line-height:1.85;opacity:.92;margin:0}
 .hero-img-note{font-size:10px;opacity:.6;margin:10px 0 0;text-align:right}
-.case{background:#FBF4F6;padding:var(--sec) var(--sp)}
+.case{background:#F6EFEA;padding:var(--sec) var(--sp)}
 .case>*{max-width:560px;margin-left:auto;margin-right:auto}
-.case-eyebrow{display:block;font-size:11px;letter-spacing:.2em;color:#C43F6B;font-weight:700;margin-bottom:10px}
+.case-eyebrow{display:block;font-size:11px;letter-spacing:.2em;color:#985A63;font-weight:700;margin-bottom:10px}
 .case-ttl{font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:clamp(24px,6.4vw,30px);font-weight:500;line-height:1.5;color:var(--text);margin-bottom:10px}
 .case-profile{font-size:13px;color:var(--light);margin-bottom:24px}
 .case-steps{list-style:none;padding:0;display:flex;flex-direction:column;gap:12px}
-.case-steps li{background:#fff;border:1px solid #F0D9E1;border-radius:10px;padding:16px 18px}
+.case-steps li{background:#fff;border:1px solid #E8D9D1;border-radius:10px;padding:16px 18px}
 .case-steps p{font-size:15px;line-height:1.85;color:var(--mid);margin:0}
-.case-lbl{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;color:#fff;background:#D4537E;border-radius:999px;padding:3px 10px;margin-bottom:8px}
-.case-result{border:2px solid #D4537E!important}
+.case-lbl{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;color:#fff;background:#B5707A;border-radius:999px;padding:3px 10px;margin-bottom:8px}
+.case-result{border:2px solid #B5707A!important}
 .case-nums{display:flex;gap:12px}
-.case-nums>div{flex:1;text-align:center;background:#FBF4F6;border-radius:8px;padding:12px 6px}
+.case-nums>div{flex:1;text-align:center;background:#F6EFEA;border-radius:8px;padding:12px 6px}
 .case-k{display:block;font-size:12px;color:var(--light)}
-.case-v{display:block;font-size:34px;font-weight:700;color:#C43F6B;line-height:1.2;letter-spacing:.02em}
+.case-v{display:block;font-size:34px;font-weight:700;color:#985A63;line-height:1.2;letter-spacing:.02em}
 .case-v small{font-size:16px;margin-left:2px}
 .case-note{font-size:11px;color:var(--light);line-height:1.8;margin-top:16px}
 .why-flow{display:flex;flex-direction:column;gap:14px;margin:28px auto;max-width:480px}
 .why-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;overflow:hidden;padding-bottom:16px}
 .why-card img{width:100%;height:180px;object-fit:cover;display:block}
-.why-card-n{font-size:11px;letter-spacing:.16em;color:#F2A7C0;font-weight:700;margin:14px 16px 4px}
+.why-card-n{font-size:11px;letter-spacing:.16em;color:#E3B9BE;font-weight:700;margin:14px 16px 4px}
 .why-card-t{font-size:18px;color:#fff;font-weight:500;margin:0 16px 6px}
 .why-card-d{font-size:13px;color:rgba(255,255,255,.7);line-height:1.8;margin:0 16px}
-.why-card-goal{border-color:#D4537E;padding-top:2px}
+.why-card-goal{border-color:#B5707A;padding-top:2px}
 .future{background:#fff;padding:var(--sec) var(--sp)}
 .future>*{max-width:560px;margin-left:auto;margin-right:auto}
 .future .sec-eyebrow{color:var(--green2)}
 .future .sec-ttl{color:var(--text)}
 .future .sec-bar{background:var(--green)}
 .future-list{display:flex;flex-direction:column;gap:12px}
-.future-item{border-left:3px solid #D4537E;background:#FBF4F6;border-radius:0 8px 8px 0;padding:14px 16px}
+.future-item{border-left:3px solid #B5707A;background:#F6EFEA;border-radius:0 8px 8px 0;padding:14px 16px}
 .future-t{font-size:16px;font-weight:700;color:var(--text);margin:0 0 4px}
 .future-d{font-size:13px;color:var(--mid);line-height:1.8;margin:0}
 .future-note{font-size:11px;color:var(--light);margin-top:14px}
 
 .trust-bar{background:#fff;padding:18px var(--sp) 16px;border-bottom:1px solid var(--border)}
 .trust-items{display:flex;max-width:480px;margin:0 auto;gap:6px}
-.trust-item{flex:1;text-align:center;background:#FBF4F6;border-radius:8px;padding:10px 4px}
-.trust-v{display:block;font-size:22px;font-weight:700;color:#C43F6B;line-height:1.2}
+.trust-item{flex:1;text-align:center;background:#F6EFEA;border-radius:8px;padding:10px 4px}
+.trust-v{display:block;font-size:22px;font-weight:700;color:#985A63;line-height:1.2}
 .trust-v small{font-size:11px;margin-left:1px}
 .trust-k{display:block;font-size:10px;color:var(--light);line-height:1.5;margin-top:4px}
 .trust-cred{font-size:12px;color:var(--mid);text-align:center;margin:12px auto 0;max-width:480px}
 .trust-cred small{font-size:11px;color:var(--light)}
 .trust-note{font-size:9px;color:var(--light);text-align:center;margin:6px auto 0}
-.psum{background:#FBF4F6;padding:40px var(--sp)}
+.psum{background:#F6EFEA;padding:40px var(--sp)}
 .psum>*{max-width:480px;margin-left:auto;margin-right:auto}
-.psum-ttl{font-size:13px;font-weight:700;color:#C43F6B;letter-spacing:.12em;margin-bottom:12px}
+.psum-ttl{font-size:13px;font-weight:700;color:#985A63;letter-spacing:.12em;margin-bottom:12px}
 .psum-rows{background:#fff;border-radius:10px;padding:4px 16px}
-.psum-row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:14px 0;border-bottom:1px solid #F0D9E1}
+.psum-row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:14px 0;border-bottom:1px solid #E8D9D1}
 .psum-row:last-child{border-bottom:none}
 .psum-k{font-size:13px;color:var(--mid)}
 .psum-v{font-size:17px;font-weight:700;color:var(--text);white-space:nowrap}
 .psum-v small{font-size:10px;font-weight:400;color:var(--light)}
 .psum-note{font-size:12px;color:var(--mid);line-height:1.8;margin-top:12px}
-.psum-link{display:block;text-align:center;font-size:13px;font-weight:700;color:#C43F6B;margin-top:14px;text-decoration:underline}
+.psum-link{display:block;text-align:center;font-size:13px;font-weight:700;color:#985A63;margin-top:14px;text-decoration:underline}
 
-#case,#why,#future,#psum,#feat-private,#feat-flex,#selfcheck{scroll-margin-top:72px}
+#case,#why,#future,#psum,#feat-private,#feat-flex,#selfcheck,#trial,#price{scroll-margin-top:124px}
 .qz{background:#fff;padding:44px var(--sp)}
 .qz>*{max-width:480px;margin-left:auto;margin-right:auto}
-.qz-eyebrow{font-size:11px;letter-spacing:.2em;color:#C43F6B;font-weight:700;margin-bottom:8px}
+.qz-eyebrow{font-size:11px;letter-spacing:.2em;color:#985A63;font-weight:700;margin-bottom:8px}
 .qz-ttl{font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:clamp(20px,5.6vw,24px);font-weight:500;line-height:1.55;color:var(--text);margin-bottom:20px}
 .qz-q{margin-bottom:16px}
 .qz-qt{font-size:14px;font-weight:700;color:var(--text);margin-bottom:8px}
-.qz-qt span{display:inline-block;background:#D4537E;color:#fff;font-size:11px;border-radius:999px;padding:2px 8px;margin-right:8px}
+.qz-qt span{display:inline-block;background:#B5707A;color:#fff;font-size:11px;border-radius:999px;padding:2px 8px;margin-right:8px}
 .qz-opts{display:flex;flex-direction:column;gap:6px}
-.qz-opts button{font:inherit;font-size:14px;text-align:left;background:#FBF4F6;border:1.5px solid #F0D9E1;border-radius:8px;padding:12px 14px;color:var(--mid);cursor:pointer}
-.qz-opts button.on{background:#D4537E;border-color:#D4537E;color:#fff;font-weight:700}
-.qz-res{background:#FBF4F6;border:2px solid #D4537E;border-radius:10px;padding:16px;margin-top:8px}
+.qz-opts button{font:inherit;font-size:14px;text-align:left;background:#F6EFEA;border:1.5px solid #E8D9D1;border-radius:8px;padding:12px 14px;color:var(--mid);cursor:pointer}
+.qz-opts button.on{background:#B5707A;border-color:#B5707A;color:#fff;font-weight:700}
+.qz-res{background:#F6EFEA;border:2px solid #B5707A;border-radius:10px;padding:16px;margin-top:8px}
 .qz-res-ttl{font-size:14px;font-weight:700;color:var(--text);margin-bottom:10px}
 .qz-links{display:flex;flex-direction:column;gap:8px}
-.qz-links a{display:block;background:#fff;border-radius:8px;padding:12px 14px;font-size:14px;color:#C43F6B;font-weight:700;text-decoration:none;border:1px solid #F0D9E1}
+.qz-links a{display:block;background:#fff;border-radius:8px;padding:12px 14px;font-size:14px;color:#985A63;font-weight:700;text-decoration:none;border:1px solid #E8D9D1}
 .qz-links a small{display:block;font-size:12px;color:var(--light);font-weight:400;margin-top:2px}
+
+/* ── design v3 (2026-11): warm beige × dusty rose ── */
+body{background:#F5F0EA;padding-bottom:84px}
+.sec-eyebrow{font-size:11px!important;letter-spacing:.24em}
+.sec-ttl{font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:500;line-height:1.55}
+.empathy{background:#4A3F3B}
+.why{background:#4A3F3B}
+.fcta{background:#4A3F3B}
+.features{background:#EFE8DE}
+.rsn-list{display:flex;flex-direction:column;gap:16px;max-width:520px;margin:0 auto}
+.rsn{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(74,63,59,.08)}
+.rsn-head{background:#B5707A;color:#fff;padding:14px 18px}
+.rsn-no{display:block;font-family:'Noto Serif JP',serif;font-size:12px;letter-spacing:.18em;opacity:.9}
+.rsn-ttl{font-size:17px;font-weight:700;line-height:1.5;margin:2px 0 0}
+.rsn-img{width:100%;height:200px;object-fit:cover;display:block}
+.rsn-body{font-size:14px;color:var(--mid);line-height:1.9;padding:16px 18px 18px;margin:0}
+.price-sec{background:#F5F0EA}
+.pr-inc{text-align:center;font-size:12px;color:var(--light);line-height:1.9;margin:0 auto 16px}
+.pr-inc strong{font-size:13px;color:#985A63}
+.pr-tbl{width:100%;max-width:520px;margin:0 auto;border-collapse:separate;border-spacing:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(74,63,59,.08);font-size:14px}
+.pr-tbl th{background:#4A3F3B;color:#fff;font-weight:500;font-size:12px;padding:10px 8px;text-align:center}
+.pr-tbl td{padding:14px 8px;text-align:center;border-top:1px solid #EFE8DE;color:var(--text);font-weight:700;vertical-align:middle}
+.pr-tbl td:first-child{text-align:left;padding-left:14px}
+.pr-tbl td small{display:block;font-size:9px;letter-spacing:.14em;color:var(--light);font-weight:400}
+.pr-pop td{background:#F6EFEA}
+.pr-badge{display:inline-block;margin-top:4px;font-size:9px;font-weight:700;color:#fff;background:#B5707A;border-radius:999px;padding:2px 8px;white-space:nowrap}
+.pr-fee{text-align:center;font-size:12px;color:var(--mid);margin:14px 0 10px}
+.pr-det{max-width:520px;margin:0 auto 18px;background:#fff;border-radius:10px;padding:12px 16px;font-size:13px}
+.pr-det summary{cursor:pointer;color:#985A63;font-weight:700}
+.pr-det ul{margin:10px 0 0;padding-left:18px;line-height:2;color:var(--mid)}
+.pr-safe{max-width:520px;margin:0 auto;background:#EFE8DE;border-radius:12px;padding:16px 18px}
+.pr-safe-ttl{font-size:13px;font-weight:700;color:var(--text);margin-bottom:6px}
+.pr-safe ul{margin:0;padding-left:18px;font-size:13px;line-height:2;color:var(--mid)}
+.trainers{background:#EFE8DE}
+.tc-list{display:flex;flex-direction:column;gap:14px;max-width:520px;margin:0 auto}
+.tc{display:flex;gap:14px;background:#fff;border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(74,63,59,.08);align-items:flex-start}
+.tc-photo{flex:0 0 112px;width:112px;height:140px;border-radius:10px;overflow:hidden;line-height:0}
+.tc-photo img{width:100%;height:100%;object-fit:cover}
+.tc-role{font-size:9px;letter-spacing:.16em;color:#B5707A;font-weight:700;margin:2px 0}
+.tc-name{font-family:'Noto Serif JP',serif;font-size:18px;font-weight:600;color:var(--text);margin:0 0 4px}
+.tc-tag{display:inline-block;font-size:10px;color:#985A63;background:#F6EFEA;border-radius:999px;padding:2px 8px;margin-bottom:6px}
+.tc-body{font-size:13px;line-height:1.8;color:var(--mid);margin:0}
+.voice{background:#F5F0EA}
+.vbub{position:relative;max-width:520px;margin:0 auto;background:#fff;border-radius:16px;padding:20px 20px;box-shadow:0 6px 24px rgba(74,63,59,.08)}
+.vbub:after{content:"";position:absolute;left:36px;bottom:-12px;border:12px solid transparent;border-top-color:#fff;border-bottom:0}
+.vbub p{font-size:15px;line-height:2;color:var(--mid);margin:0}
+.vbub mark{background:linear-gradient(transparent 60%,#F1DADC 60%);color:var(--text);font-weight:700}
+.vwho{max-width:520px;margin:20px auto 4px;font-size:12px;color:var(--light);padding-left:8px}
+.vstars{color:#C9A15C;margin-right:8px;letter-spacing:.1em}
+.vnote{max-width:520px;margin:0 auto;font-size:11px;color:var(--light);padding-left:8px}
+.flow{background:#EFE8DE}
+.flow-img{width:100%;max-width:360px;height:150px;object-fit:cover;border-radius:10px;display:block;margin:4px 0 10px}
+.flow-num{background:#B5707A!important;color:#fff!important}
+.letter-sec{background:#F5F0EA}
+.trial{background:#F6EFEA}
+.stick-hide-old,#sbar{display:none!important}
+.stick{position:fixed;left:0;right:0;bottom:0;z-index:90;display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(245,240,234,.96);box-shadow:0 -4px 16px rgba(74,63,59,.12);transform:translateY(110%);transition:transform .3s}
+.stick.on{transform:none}
+body.menu-open .stick{display:none}
+.stick a{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;padding:10px 6px;line-height:1.3}
+.stick-line{background:#06C755;color:#fff;flex-direction:row!important;gap:6px}
+.stick-rsv{background:#B5707A;color:#fff}
+.stick-rsv small{font-size:10px;font-weight:400;opacity:.9}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&text=%2501234569glmoty%E3%80%80%E3%80%81%E3%80%82%E3%80%8C%E3%80%8D%E3%80%9C%E3%81%82%E3%81%84%E3%81%86%E3%81%88%E3%81%8A%E3%81%8B%E3%81%8C%E3%81%8D%E3%81%8F%E3%81%91%E3%81%93%E3%81%94%E3%81%95%E3%81%96%E3%81%97%E3%81%98%E3%81%99%E3%81%9B%E3%81%9C%E3%81%9D%E3%81%9F%E3%81%A0%E3%81%A1%E3%81%A3%E3%81%A4%E3%81%A6%E3%81%A7%E3%81%A8%E3%81%A9%E3%81%AA%E3%81%AB%E3%81%AD%E3%81%AE%E3%81%AF%E3%81%B0%E3%81%B2%E3%81%BE%E3%81%BF%E3%82%81%E3%82%82%E3%82%88%E3%82%89%E3%82%8A%E3%82%8B%E3%82%8C%E3%82%8D%E3%82%8F%E3%82%92%E3%82%93%E3%82%B0%E3%83%88%E3%83%8A%E3%83%8B%E3%83%AC%E3%83%B3%E3%83%B6%E3%83%BB%E3%83%BC%E4%B8%80%E4%B8%8D%E4%B8%AD%E4%BA%88%E4%BA%BA%E4%BB%A3%E4%BC%9A%E4%BC%9D%E4%BD%93%E4%BF%A1%E5%85%A5%E5%85%A8%E5%88%86%E5%88%87%E5%8B%A7%E5%90%88%E5%90%8C%E5%90%8D%E5%90%91%E5%91%B3%E5%93%A1%E5%9D%87%E5%A0%B4%E5%A4%9A%E5%A7%8B%E5%AD%97%E5%AE%89%E5%AE%A2%E5%B0%91%E5%B1%B1%E5%B9%B3%E5%B9%B4%E5%B9%B8%E5%BA%97%E5%BA%A6%E5%BD%93%E5%BE%85%E5%BE%8C%E5%BF%83%E6%80%9D%E6%82%A9%E6%89%80%E6%8C%81%E6%95%B0%E6%96%B0%E6%96%B9%E6%99%BA%E6%9C%80%E6%9C%88%E6%9C%9F%E6%9C%AC%E6%9D%A5%E6%9F%B4%E6%A5%BD%E6%A7%98%E6%B0%97%E6%B1%BA%E7%84%A1%E7%90%86%E7%A7%81%E7%B4%84%E7%B6%99%E7%B6%9A%E8%87%AA%E8%88%88%E8%A1%A8%E8%A7%A3%E8%AA%87%E8%AA%98%E8%AA%AD%E8%B6%8A%E9%80%9A%E9%95%B7%E9%96%93%E9%A0%BC%E9%A8%93%EF%BC%88%EF%BC%89%EF%BC%8F%EF%BC%9F&display=swap" media="print" onload="this.media='all'">
 </head>
 <body>
 
 <!-- STICKY BAR -->
+<div class="stick" id="stick" aria-hidden="true">
+  <a href="https://lin.ee/7wyOAiR" class="stick-line" data-line-pos="stickybar" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問</a>
+  <a href="#trial" class="stick-rsv">体験を予約する<small>90分 5,500円</small></a>
+</div>
 <div id="sbar">
   <p class="sbar-sub">体験は各店 毎月5名限定</p>
   <a href="https://lin.ee/7wyOAiR" class="sbar-cta" data-line-pos="sticky" target="_blank" rel="noopener" style="background:#06C755">
@@ -668,31 +735,31 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   <div class="sec-bar fi d2"></div>
   <div class="pain-grid fi d2">
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5707A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
       <p>食べる量は増えていないのに、<br>体重だけが少しずつ増えていく</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5707A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
       <p>自重トレーニングや動画で頑張った。<br>少し痩せて、すぐ戻った</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5707A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
       <p>ホットヨガも<br>マシンピラティスも通った。<br>体重は同じだった</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v8"/><path d="M8 21l4-6 4 6"/><path d="M9 11l-3 2"/><path d="M15 11l3 2"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5707A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v8"/><path d="M8 21l4-6 4 6"/><path d="M9 11l-3 2"/><path d="M15 11l3 2"/></svg></div>
       <p>24時間ジムを契約したのに、<br>結局続かなかった</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5707A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
       <p>食べたいものを食べたい。<br>お酒もやめたくない。でも痩せたい</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5707A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
       <p>大手ジムは人目が気になって、<br>なかなか足が向かない</p>
     </div>
     <div class="pain-card">
-      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+      <div class="pain-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B5707A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
       <p>落ちてほしいお腹は落ちず、<br>顔ばかり痩せて老けて見える</p>
     </div>
   </div>
@@ -730,7 +797,6 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
 </section>
 
-<picture><source srcset="images/gym-interior.webp" type="image/webp"><img width="1200" height="900" loading="lazy" src="images/gym-interior.jpg" alt="5toolgym赤坂店 トレーニングエリア" style="width:100%;height:260px;object-fit:cover;object-position:center;display:block"></picture>
 
 <!-- ══════════ FUTURE ══════════ -->
 <section class="future" id="future">
@@ -759,54 +825,27 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 <!-- ══════════ FEATURES ══════════ -->
 <section class="features" id="features">
   <span class="sec-eyebrow fi">選ばれる理由</span>
-  <h2 class="sec-ttl fi d1">5toolgymの<em>特徴</em></h2>
+  <h2 class="sec-ttl fi d1">5toolgymが<br><em>選ばれる4つの理由</em></h2>
   <div class="sec-bar fi d2"></div>
-  <div class="feat-grid fi d2">
-
-    <div class="feat-item">
-      <div class="feat-ico">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="#D4537E" stroke-width="1.6"/><path d="M12 8v4l3 3" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div>
-        <span class="feat-tag">根本改善</span>
-        <p class="feat-ttl">「痩せない原因」から先に直す</p>
-        <p class="feat-body">姿勢が崩れていると、使うべき筋肉が使えていません。まず姿勢・骨格を整えることで、身体が本来の力を発揮しやすくなります。</p>
-      </div>
+  <div class="rsn-list">
+    <div class="rsn fi">
+      <div class="rsn-head"><span class="rsn-no">Reason 01</span><p class="rsn-ttl">「痩せない原因」から先に直す</p></div>
+      <p class="rsn-body">姿勢が崩れていると、使うべき筋肉が使えていません。まず姿勢・骨格を整えることで、体が本来の力を発揮しやすくなります。</p>
     </div>
-
-    <div class="feat-item">
-      <div class="feat-ico" id="feat-private">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#D4537E" stroke-width="1.6"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round"/></svg>
-      </div>
-      <div>
-        <span class="feat-tag">完全個室</span>
-        <p class="feat-ttl">完全個室だから、本気になれる</p>
-        <p class="feat-body">他のお客様と会うことがない完全個室・完全予約制。人目を気にせず、自分の身体と向き合えます。体型に自信がなくても大丈夫です。</p>
-      </div>
+    <div class="rsn fi" id="feat-private">
+      <div class="rsn-head"><span class="rsn-no">Reason 02</span><p class="rsn-ttl">完全個室だから、人目を気にせず通える</p></div>
+      <picture><source srcset="images/amenity-studio-akasaka.webp" type="image/webp"><img class="rsn-img" loading="lazy" width="1200" height="900" src="images/amenity-studio-akasaka.webp" alt="5toolgym福岡赤坂・大濠公園店の完全個室トレーニングルーム"></picture>
+      <p class="rsn-body">他のお客様と会うことがない完全個室・完全予約制。体型に自信がなくても、自分の体と落ち着いて向き合えます。</p>
     </div>
-
-    <div class="feat-item">
-      <div class="feat-ico">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#D4537E" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 2v6h6M9 13h6M9 17h4" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round"/></svg>
-      </div>
-      <div>
-        <span class="feat-tag">個別設計</span>
-        <p class="feat-ttl">あなただけのプログラム</p>
-        <p class="feat-body">体型・生活習慣をヒアリングして設計。食事は「制限」ではなく「提案」。無理なく続けられる方法を一緒に考えます。</p>
-      </div>
+    <div class="rsn fi">
+      <div class="rsn-head"><span class="rsn-no">Reason 03</span><p class="rsn-ttl">あなただけのプログラム</p></div>
+      <picture><source srcset="images/counseling.webp" type="image/webp"><img class="rsn-img" loading="lazy" width="1200" height="900" src="images/counseling.jpg" alt="トレーナーがカウンセリングで生活習慣をうかがっているところ"></picture>
+      <p class="rsn-body">体型・生活習慣をうかがって設計します。食事は「制限」ではなく「提案」。無理なく続けられる方法を一緒に考えます。</p>
     </div>
-
-    <div class="feat-item">
-      <div class="feat-ico" id="feat-flex">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="#D4537E" stroke-width="1.6"/><path d="M16 2v4M8 2v4M3 10h18" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round"/><path d="M9 16l2 2 4-4" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div>
-        <span class="feat-tag">柔軟性</span>
-        <p class="feat-ttl">開始直前まで変更・キャンセル無料</p>
-        <p class="feat-body">子育て・仕事・急な予定変更にも対応。続けられない理由をひとつずつ潰します。</p>
-      </div>
+    <div class="rsn fi" id="feat-flex">
+      <div class="rsn-head"><span class="rsn-no">Reason 04</span><p class="rsn-ttl">開始直前まで変更・キャンセル無料</p></div>
+      <p class="rsn-body">子育て・仕事・急な予定変更にも対応します。続けられない理由を、ひとつずつなくしていきます。</p>
     </div>
-
   </div>
 </section>
 
@@ -815,68 +854,34 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   <span class="sec-eyebrow fi">料金プラン</span>
   <h2 class="sec-ttl fi d1">料金プラン</h2>
   <div class="sec-bar fi d2"></div>
-  <p class="fi d2" style="text-align:center;font-size:11px;letter-spacing:.15em;color:var(--light);margin-bottom:6px;">すべてのコースに含まれるもの</p>
-  <p class="fi d2" style="text-align:center;font-size:13px;letter-spacing:.08em;color:var(--green);font-weight:500;margin-bottom:32px;">マンツーマン指導 ＋ 完全個室 ＋ LINE相談無制限</p>
-  <div class="price-list fi d2">
-    <div class="pc">
-      <p class="pc-name">INTENSIVE</p>
-      <p class="pc-times">月8回コース</p>
-      <p class="pc-amt">¥72,800<span>（税込）/月</span></p>
-      <p class="pc-per">1回あたり ¥9,100</p>
-      <ul class="pc-feats">
-        <li>マンツーマン指導</li>
-        <li>完全個室</li>
-        <li>骨格チェック含む</li>
-        <li>栄養アドバイス</li>
-        <li>翌月4回まで繰越可</li>
-      </ul>
-    </div>
-    <div class="pc star">
-      <p class="pc-pop">最も多くのお客様が選ぶコース</p>
-      <p class="pc-name">STANDARD</p>
-      <p class="pc-times">月6回コース</p>
-      <p class="pc-amt">¥55,800<span>（税込）/月</span></p>
-      <p class="pc-per">1回あたり ¥9,300</p>
-      <ul class="pc-feats">
-        <li>マンツーマン指導</li>
-        <li>完全個室</li>
-        <li>骨格チェック含む</li>
-        <li>栄養アドバイス</li>
-        <li>翌月3回まで繰越可</li>
-      </ul>
-    </div>
-    <div class="pc">
-      <p class="pc-name">LIGHT</p>
-      <p class="pc-times">月4回コース</p>
-      <p class="pc-amt">¥38,000<span>（税込）/月</span></p>
-      <p class="pc-per">1回あたり ¥9,500</p>
-      <ul class="pc-feats">
-        <li>マンツーマン指導</li>
-        <li>完全個室</li>
-        <li>骨格チェック含む</li>
-        <li>翌月2回まで繰越可</li>
-      </ul>
-    </div>
-    <div class="pc">
-      <p class="pc-name">ENTRY</p>
-      <p class="pc-times">月2回コース</p>
-      <p class="pc-amt">¥19,400<span>（税込）/月</span></p>
-      <p class="pc-per">1回あたり ¥9,700</p>
-      <ul class="pc-feats">
-        <li>マンツーマン指導</li>
-        <li>完全個室</li>
-        <li>骨格チェック含む</li>
-        <li>翌月1回まで繰越可</li>
-      </ul>
-    </div>
-  </div>
-  <p class="price-footnote fi d3">入会金 ¥11,000（税込）／ 体験セッション 90分 ¥5,500（税込）</p>
-  <div class="price-options fi d3">
-    <p class="price-options-ttl">全コース共通の安心サービス</p>
-    <div class="price-option-item">予約時間直前まで変更・キャンセル無料</div>
-    <div class="price-option-item">家族間でのコース回数シェアOK（二親等以内）</div>
-    <div class="price-option-item">ペアトレーニング対応可</div>
-    <div class="price-option-item">消化できなかった回数はコースの半分まで翌月繰越可能</div>
+  <p class="pr-inc">すべてのコースに含まれるもの<br><strong>マンツーマン指導・完全個室・骨格チェック・LINE相談無制限</strong></p>
+  <table class="pr-tbl">
+    <thead><tr><th>コース</th><th>月額（税込）</th><th>1回あたり</th></tr></thead>
+    <tbody>
+      <tr><td>月8回<small>INTENSIVE</small></td><td>72,800円</td><td>9,100円</td></tr>
+      <tr class="pr-pop"><td>月6回<small>STANDARD</small><span class="pr-badge">最も多くのお客様が選ぶコース</span></td><td>55,800円</td><td>9,300円</td></tr>
+      <tr><td>月4回<small>LIGHT</small></td><td>38,000円</td><td>9,500円</td></tr>
+      <tr><td>月2回<small>ENTRY</small></td><td>19,400円</td><td>9,700円</td></tr>
+    </tbody>
+  </table>
+  <p class="pr-fee">入会金 11,000円（税込）／ 体験セッション 90分 5,500円（税込）</p>
+  <details class="pr-det">
+    <summary>コースごとの内容を見る</summary>
+    <ul>
+      <li><b>月8回</b>：栄養アドバイスつき／翌月4回まで繰越可</li>
+      <li><b>月6回</b>：栄養アドバイスつき／翌月3回まで繰越可</li>
+      <li><b>月4回</b>：翌月2回まで繰越可</li>
+      <li><b>月2回</b>：翌月1回まで繰越可</li>
+    </ul>
+  </details>
+  <div class="pr-safe">
+    <p class="pr-safe-ttl">全コース共通の安心サービス</p>
+    <ul>
+      <li>予約時間直前まで変更・キャンセル無料</li>
+      <li>家族間でのコース回数シェアOK（二親等以内）</li>
+      <li>ペアトレーニング対応可</li>
+      <li>消化できなかった回数はコースの半分まで翌月繰越可能</li>
+    </ul>
   </div>
 </section>
 
@@ -892,73 +897,21 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   <span class="sec-eyebrow fi">トレーナー紹介</span>
   <h2 class="sec-ttl fi d1">トレーナー紹介</h2>
   <div class="sec-bar fi d2"></div>
-  <div class="trainer-list fi d2">
-
-    <div class="tcard">
-      <div class="tcard-photo"><picture><source srcset="images/img2.webp" type="image/webp"><img width="1080" height="1350" loading="lazy" src="images/img2.jpg" alt="柴山智幸"></picture></div>
-      <div>
-        <p class="tcard-role">OWNER / TRAINER</p>
-        <p class="tcard-name">柴山 智幸</p>
-        <p class="tcard-tag">5toolgym オーナー</p>
-        <p class="tcard-bio">「痩せるためだけのジム」は作りたくなかった、というのが正直な気持ちです。<br><br>多くの方を見てきて気づいたのは、「体型が変わらない人」の多くは、鍛え方が間違っているのではなく、身体の使い方に問題があるということ。<br><br>姿勢が悪いまま運動すると、むしろ痛みが出る。動きのクセを直さないと、何年通っても変わらない。だから5toolgymは、まず「機能を整える」ことを先にやります。変わったお客様の顔を見るたびに、この順番で正解だったと思っています。</p>
-      </div>
-    </div>
-
-    <div class="tcard">
-      <div class="tcard-photo"><picture><source srcset="images/img4.webp" type="image/webp"><img width="1080" height="1350" loading="lazy" src="images/img4.jpg" alt="manami"></picture></div>
-      <div>
-        <p class="tcard-role">PERSONAL TRAINER</p>
-        <p class="tcard-name">manami</p>
-        <p class="tcard-tag">女性専門トレーナー</p>
-        <p class="tcard-bio">ホルモンバランスや産後の体型変化など、女性特有の悩みに寄り添った指導が強み。「言いにくいことも相談しやすい」と女性のお客様から高い信頼を得ています。</p>
-      </div>
-    </div>
-
-    <div class="tcard">
-      <div class="tcard-photo"><picture><source srcset="images/trainer-ami.webp" type="image/webp"><img width="1080" height="1080" loading="lazy" src="images/trainer-ami.jpg" alt="Ami"></picture></div>
-      <div>
-        <p class="tcard-role">PERSONAL TRAINER</p>
-        <p class="tcard-name">Ami</p>
-        <p class="tcard-tag">継続サポートが得意</p>
-        <p class="tcard-bio">「体は資本」を信条に、皆さまの目標に一歩ずつ近づけるようサポートします。学生時代から続けてきたバスケットボールで培った継続力を活かし、無理なく続けられるトレーニングを一緒に作っていきます。</p>
-      </div>
-    </div></div>
+  <div class="tc-list">
+    <div class="tc fi"><div class="tc-photo"><picture><source srcset="images/img2.webp" type="image/webp"><img width="1080" height="1350" loading="lazy" src="images/img2.jpg" alt="柴山智幸"></picture></div><div class="tc-txt"><p class="tc-role">OWNER / TRAINER</p><p class="tc-name">柴山 智幸</p><span class="tc-tag">5toolgym オーナー</span><p class="tc-body">「痩せるためだけのジム」は作りたくなかった。体型が変わらない人の多くは、鍛え方ではなく体の使い方に原因があります。だから、まず「機能を整える」ことから始めます。</p></div></div>
+    <div class="tc fi"><div class="tc-photo"><picture><source srcset="images/img4.webp" type="image/webp"><img width="1080" height="1350" loading="lazy" src="images/img4.jpg" alt="manami"></picture></div><div class="tc-txt"><p class="tc-role">PERSONAL TRAINER</p><p class="tc-name">manami</p><span class="tc-tag">女性専門トレーナー</span><p class="tc-body">ホルモンバランスや産後の体型変化など、女性特有の悩みに寄り添った指導が強み。言いにくいことも相談しやすいトレーナーです。</p></div></div>
+    <div class="tc fi"><div class="tc-photo"><picture><source srcset="images/trainer-ami.webp" type="image/webp"><img width="1080" height="1080" loading="lazy" src="images/trainer-ami.jpg" alt="Ami"></picture></div><div class="tc-txt"><p class="tc-role">PERSONAL TRAINER</p><p class="tc-name">Ami</p><span class="tc-tag">継続サポートが得意</span><p class="tc-body">「体は資本」が信条。学生時代のバスケットボールで培った継続力を活かし、無理なく続けられるトレーニングを一緒に作ります。</p></div></div>
+  </div>
 </section>
-
-
-
-<picture><source srcset="images/training-squat.webp" type="image/webp"><img width="900" height="1200" loading="lazy" src="images/training-squat.jpg" alt="5toolgym赤坂店 パーソナルトレーニング指導" style="width:100%;height:260px;object-fit:cover;object-position:center;display:block"></picture>
 
 <!-- ══════════ VOICE ══════════ -->
 <section class="voice">
   <span class="sec-eyebrow fi">お客様の声</span>
   <h2 class="sec-ttl fi d1">お客様の声</h2>
   <div class="sec-bar fi d2"></div>
-  <div class="fi d2" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-bottom:32px;border-radius:8px;overflow:hidden;">
-    <div style="background:var(--bg);padding:20px 12px;text-align:center;">
-      <div style="font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:32px;font-weight:300;color:var(--green);line-height:1;">13.1<span style="font-size:14px;">ヶ月</span></div>
-      <div style="font-size:10px;color:var(--light);letter-spacing:.08em;margin-top:6px;line-height:1.5;">平均継続期間</div>
-      <div style="font-size:8px;color:var(--light);letter-spacing:0;margin-top:4px;line-height:1.4">2022年10月〜2026年4月／薬院店・赤坂店合算</div>
-    </div>
-    <div style="background:var(--bg);padding:20px 12px;text-align:center;">
-      <div style="font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:32px;font-weight:300;color:var(--green);line-height:1;">★5.0</div>
-      <div style="font-size:10px;color:var(--light);letter-spacing:.08em;margin-top:6px;line-height:1.5;">Google口コミ（4件）</div>
-    </div>
-    <div style="background:var(--bg);padding:20px 12px;text-align:center;">
-      <div style="font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:32px;font-weight:300;color:var(--green);line-height:1;">5<span style="font-size:14px;">年以上</span></div>
-      <div style="font-size:10px;color:var(--light);letter-spacing:.08em;margin-top:6px;line-height:1.5;">通い続けている<br>会員がいます</div>
-    </div>
-  </div>
-  <div class="voice-list fi d2">
-    <div class="vc">
-      <div style="color:#EF9F27;font-size:13px;margin-bottom:4px;">★★★★★</div>
-      <p class="vc-body">元々ダイエット目的で通い始めましたが、反り腰が良くなってきたことと肩こりが出なくなったことがとても嬉しいです。トレーナーさんと話し合ってダイエットは体重を急激に落とすのではなく、緩やかに落とす方針で進めています。</p>
-      <p class="vc-meta">C.E. ／ 30代後半 女性・主婦・ダイエット目的</p>
-    </div>
-  </div>
-  <p class="results-note" style="margin-top:12px">※個人の感想です。効果には個人差があります。</p>
-  <a href="https://lin.ee/7wyOAiR" class="line-cta" data-line-pos="cta4" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問だけする</a>
-  <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
+  <div class="vbub fi"><p>元々ダイエット目的で通い始めましたが、<mark>反り腰が良くなってきたことと肩こりが出なくなったことがとても嬉しいです。</mark>トレーナーさんと話し合ってダイエットは体重を急激に落とすのではなく、緩やかに落とす方針で進めています。</p></div>
+  <p class="vwho fi"><span class="vstars">★★★★★</span>C.E. ／ 30代後半 女性・主婦・ダイエット目的</p>
+  <p class="vnote">※個人の感想です。効果には個人差があります。</p>
 </section>
 
 <!-- ══════════ FLOW ══════════ -->
@@ -970,6 +923,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
     <div class="flow-item">
       <div class="flow-num">1</div>
       <div class="flow-body">
+        <picture><source srcset="images/flow-1.webp" type="image/webp"><img class="flow-img" loading="lazy" width="800" height="600" src="images/flow-1.jpg" alt="スマートフォンで予約するイメージ"></picture>
         <span class="flow-time">〜5分</span>
         <p class="flow-ttl">まず予約する</p>
         <p class="flow-desc">このページのボタンから、ご都合の良い日時を選んでください。予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p>
@@ -978,6 +932,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
     <div class="flow-item">
       <div class="flow-num">2</div>
       <div class="flow-body">
+        <picture><source srcset="images/counseling.webp" type="image/webp"><img class="flow-img" loading="lazy" width="800" height="600" src="images/counseling.jpg" alt="カウンセリングの様子"></picture>
         <span class="flow-time">15分</span>
         <p class="flow-ttl">カウンセリング</p>
         <p class="flow-desc">現在のお悩み・目標・生活習慣などをじっくりヒアリング。あなたの体の現状を一緒に確認します。</p>
@@ -994,6 +949,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
     <div class="flow-item">
       <div class="flow-num">4</div>
       <div class="flow-body">
+        <picture><source srcset="images/flow-4.webp" type="image/webp"><img class="flow-img" loading="lazy" width="800" height="600" src="images/flow-4.jpg" alt="トレーナーによるパーソナルストレッチ"></picture>
         <span class="flow-time">10分</span>
         <p class="flow-ttl">パーソナルストレッチ</p>
         <p class="flow-desc">トレーニング後のクールダウンです。</p>
@@ -1009,13 +965,6 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
     </div>
   </div>
 </section>
-
-<!-- ══ FLOW CTA ══ -->
-<div style="background:var(--w);padding:32px var(--sp);text-align:center;border-top:1px solid var(--border)">
-  <p style="font-size:12px;color:var(--light);margin-bottom:16px;letter-spacing:.06em">予約はボタン1つ。相談だけでも大丈夫です</p>
-  <a href="https://lin.ee/7wyOAiR" class="line-cta" data-line-pos="cta5" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問だけする</a>
-  <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
-</div>
 
 <!-- ══════════ TRIAL ══════════ -->
 <section class="trial" id="trial">
@@ -1097,7 +1046,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   <div class="access-wrap">
     <div class="map-wrap" id="mapWrap">
       <div id="mapPlaceholder" style="width:100%;height:100%;background:#e8e4de;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;cursor:pointer;" onclick="loadMap()">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#D4537E"/></svg>
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#B5707A"/></svg>
         <span style="font-size:13px;color:var(--green);font-weight:500;letter-spacing:.06em">地図を表示する</span>
         <span style="font-size:11px;color:var(--light)">タップで読み込み</span>
       </div>
@@ -1108,8 +1057,6 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
         <dt class="a-dt">アクセス</dt><dd class="a-dd">地下鉄「赤坂駅」徒歩6分<br>大濠公園すぐそば</dd>
         <dt class="a-dt">営業時間</dt><dd class="a-dd">9:30〜22:30<br>完全予約制</dd>
       </dl>
-      <a href="https://lin.ee/7wyOAiR" class="line-cta" data-line-pos="cta7" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問だけする</a>
-      <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
     </div>
   </div>
 </section>
@@ -1117,12 +1064,10 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 <!-- ══════════ 代表メッセージ ══════════ -->
 <section class="letter-sec">
   <div class="letter-inner">
-    <p class="letter-text">この度は、最後まで読んでいただき、<br>ありがとうございます。<br>ここまで読んでくださったということは、5toolgymのトレーニングに少し興味を<br>持っていただけたということかと思います。</p>
-    <p class="letter-text">新しいことを始めるとき、<br>楽しみと同じくらい、不安もありますよね。</p>
-    <p class="letter-text">5toolgymってどんな場所なんだろう？<br>トレーナーはどんな人なんだろう？<br>自分の悩みを、<br>本当に解決してもらえるんだろうか？</p>
-    <p class="letter-text">その気持ち、とてもよくわかります。<br>だからこそ、急がなくて大丈夫です。</p>
-    <p class="letter-text">体験に来ていただいても、<br>その場で入会を決める必要はありません。<br>持ち帰って、ゆっくり考えてください。</p>
-    <p class="letter-text">5toolgymのトレーナー全員で、<br>あなたのお悩みに向き合います。<br>ぜひ、私たちを頼ってください。<br>無理な勧誘は一切ありませんので、<br>どうか安心してご予約・ご来店ください。<br>あなたとお会いできるのを、<br>心待ちにしています。</p>
+    <p class="letter-text">最後まで読んでいただき、ありがとうございます。</p>
+    <p class="letter-text">新しいことを始めるときは、<br>楽しみと同じくらい、不安もあると思います。</p>
+    <p class="letter-text">体験に来ていただいても、<br>その場で入会を決める必要はありません。<br>無理な勧誘もしませんので、<br>持ち帰って、ゆっくり考えてください。</p>
+    <p class="letter-text">あなたとお会いできるのを、<br>心待ちにしています。</p>
     <p class="letter-sig">5toolgym代表　柴山 智幸</p>
   </div>
 </section>
@@ -1202,6 +1147,12 @@ document.querySelectorAll('a[href*="lin.ee"],a[href*="line.me"]').forEach(a=>{a.
     track('selfcheck_complete',{concern:sel.concern,tried:sel.tried,worry:sel.worry});
   }
 })();
+</script>
+<script>
+(function(){var s=document.getElementById('stick'),h=document.querySelector('.hero'),f=document.querySelector('.fcta');
+function u(){var y=scrollY,show=h&&y>h.offsetTop+h.offsetHeight-80;if(f){var r=f.getBoundingClientRect();if(r.top<innerHeight)show=false}s.classList.toggle('on',!!show);s.setAttribute('aria-hidden',show?'false':'true')}
+addEventListener('scroll',u,{passive:true});u();
+s.querySelector('.stick-rsv').addEventListener('click',function(){try{if(typeof gtag==='function')gtag('event','sticky_reserve_click',{store:'赤坂'})}catch(e){}});})();
 </script>
 </body>
 </html>
