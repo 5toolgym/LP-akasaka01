@@ -516,6 +516,44 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 .future-t{font-size:16px;font-weight:700;color:var(--text);margin:0 0 4px}
 .future-d{font-size:13px;color:var(--mid);line-height:1.8;margin:0}
 .future-note{font-size:11px;color:var(--light);margin-top:14px}
+
+.trust-bar{background:#fff;padding:18px var(--sp) 16px;border-bottom:1px solid var(--border)}
+.trust-items{display:flex;max-width:480px;margin:0 auto;gap:6px}
+.trust-item{flex:1;text-align:center;background:#FBF4F6;border-radius:8px;padding:10px 4px}
+.trust-v{display:block;font-size:22px;font-weight:700;color:#C43F6B;line-height:1.2}
+.trust-v small{font-size:11px;margin-left:1px}
+.trust-k{display:block;font-size:10px;color:var(--light);line-height:1.5;margin-top:4px}
+.trust-cred{font-size:12px;color:var(--mid);text-align:center;margin:12px auto 0;max-width:480px}
+.trust-cred small{font-size:11px;color:var(--light)}
+.trust-note{font-size:9px;color:var(--light);text-align:center;margin:6px auto 0}
+.psum{background:#FBF4F6;padding:40px var(--sp)}
+.psum>*{max-width:480px;margin-left:auto;margin-right:auto}
+.psum-ttl{font-size:13px;font-weight:700;color:#C43F6B;letter-spacing:.12em;margin-bottom:12px}
+.psum-rows{background:#fff;border-radius:10px;padding:4px 16px}
+.psum-row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:14px 0;border-bottom:1px solid #F0D9E1}
+.psum-row:last-child{border-bottom:none}
+.psum-k{font-size:13px;color:var(--mid)}
+.psum-v{font-size:17px;font-weight:700;color:var(--text);white-space:nowrap}
+.psum-v small{font-size:10px;font-weight:400;color:var(--light)}
+.psum-note{font-size:12px;color:var(--mid);line-height:1.8;margin-top:12px}
+.psum-link{display:block;text-align:center;font-size:13px;font-weight:700;color:#C43F6B;margin-top:14px;text-decoration:underline}
+
+#case,#why,#future,#psum,#feat-private,#feat-flex,#selfcheck{scroll-margin-top:72px}
+.qz{background:#fff;padding:44px var(--sp)}
+.qz>*{max-width:480px;margin-left:auto;margin-right:auto}
+.qz-eyebrow{font-size:11px;letter-spacing:.2em;color:#C43F6B;font-weight:700;margin-bottom:8px}
+.qz-ttl{font-family:'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif;font-size:clamp(20px,5.6vw,24px);font-weight:500;line-height:1.55;color:var(--text);margin-bottom:20px}
+.qz-q{margin-bottom:16px}
+.qz-qt{font-size:14px;font-weight:700;color:var(--text);margin-bottom:8px}
+.qz-qt span{display:inline-block;background:#D4537E;color:#fff;font-size:11px;border-radius:999px;padding:2px 8px;margin-right:8px}
+.qz-opts{display:flex;flex-direction:column;gap:6px}
+.qz-opts button{font:inherit;font-size:14px;text-align:left;background:#FBF4F6;border:1.5px solid #F0D9E1;border-radius:8px;padding:12px 14px;color:var(--mid);cursor:pointer}
+.qz-opts button.on{background:#D4537E;border-color:#D4537E;color:#fff;font-weight:700}
+.qz-res{background:#FBF4F6;border:2px solid #D4537E;border-radius:10px;padding:16px;margin-top:8px}
+.qz-res-ttl{font-size:14px;font-weight:700;color:var(--text);margin-bottom:10px}
+.qz-links{display:flex;flex-direction:column;gap:8px}
+.qz-links a{display:block;background:#fff;border-radius:8px;padding:12px 14px;font-size:14px;color:#C43F6B;font-weight:700;text-decoration:none;border:1px solid #F0D9E1}
+.qz-links a small{display:block;font-size:12px;color:var(--light);font-weight:400;margin-top:2px}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&text=%2501234569glmoty%E3%80%80%E3%80%81%E3%80%82%E3%80%8C%E3%80%8D%E3%80%9C%E3%81%82%E3%81%84%E3%81%86%E3%81%88%E3%81%8A%E3%81%8B%E3%81%8C%E3%81%8D%E3%81%8F%E3%81%91%E3%81%93%E3%81%94%E3%81%95%E3%81%96%E3%81%97%E3%81%98%E3%81%99%E3%81%9B%E3%81%9C%E3%81%9D%E3%81%9F%E3%81%A0%E3%81%A1%E3%81%A3%E3%81%A4%E3%81%A6%E3%81%A7%E3%81%A8%E3%81%A9%E3%81%AA%E3%81%AB%E3%81%AD%E3%81%AE%E3%81%AF%E3%81%B0%E3%81%B2%E3%81%BE%E3%81%BF%E3%82%81%E3%82%82%E3%82%88%E3%82%89%E3%82%8A%E3%82%8B%E3%82%8C%E3%82%8D%E3%82%8F%E3%82%92%E3%82%93%E3%82%B0%E3%83%88%E3%83%8A%E3%83%8B%E3%83%AC%E3%83%B3%E3%83%B6%E3%83%BB%E3%83%BC%E4%B8%80%E4%B8%8D%E4%B8%AD%E4%BA%88%E4%BA%BA%E4%BB%A3%E4%BC%9A%E4%BC%9D%E4%BD%93%E4%BF%A1%E5%85%A5%E5%85%A8%E5%88%86%E5%88%87%E5%8B%A7%E5%90%88%E5%90%8C%E5%90%8D%E5%90%91%E5%91%B3%E5%93%A1%E5%9D%87%E5%A0%B4%E5%A4%9A%E5%A7%8B%E5%AD%97%E5%AE%89%E5%AE%A2%E5%B0%91%E5%B1%B1%E5%B9%B3%E5%B9%B4%E5%B9%B8%E5%BA%97%E5%BA%A6%E5%BD%93%E5%BE%85%E5%BE%8C%E5%BF%83%E6%80%9D%E6%82%A9%E6%89%80%E6%8C%81%E6%95%B0%E6%96%B0%E6%96%B9%E6%99%BA%E6%9C%80%E6%9C%88%E6%9C%9F%E6%9C%AC%E6%9D%A5%E6%9F%B4%E6%A5%BD%E6%A7%98%E6%B0%97%E6%B1%BA%E7%84%A1%E7%90%86%E7%A7%81%E7%B4%84%E7%B6%99%E7%B6%9A%E8%87%AA%E8%88%88%E8%A1%A8%E8%A7%A3%E8%AA%87%E8%AA%98%E8%AA%AD%E8%B6%8A%E9%80%9A%E9%95%B7%E9%96%93%E9%A0%BC%E9%A8%93%EF%BC%88%EF%BC%89%EF%BC%8F%EF%BC%9F&display=swap" media="print" onload="this.media='all'">
 </head>
@@ -580,11 +618,38 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 </section>
 
 
+<!-- ══════════ TRUST BAR ══════════ -->
+<div class="trust-bar">
+  <div class="trust-items">
+    <div class="trust-item"><span class="trust-v">13.1<small>ヶ月</small></span><span class="trust-k">平均継続期間</span></div>
+    <div class="trust-item"><span class="trust-v">5<small>年以上</small></span><span class="trust-k">通い続けている<br>会員がいます</span></div>
+    <div class="trust-item"><span class="trust-v">★5.0</span><span class="trust-k">Google口コミ<br>（4件）</span></div>
+  </div>
+  <p class="trust-cred">代表はNCCA講師資格を保有<br><small>（トレーナーを指導する立場の資格）</small></p>
+  <p class="trust-note">平均継続期間：2022年10月〜2026年4月／薬院店・赤坂店合算</p>
+</div>
+
 <!-- URGENCY -->
 <div class="urgency">
   <span class="urgency-dot"></span>
   体験は各店 毎月5名限定
 </div>
+
+<!-- ══════════ SELF CHECK ══════════ -->
+<section class="qz" id="selfcheck">
+  <p class="qz-eyebrow">30秒セルフチェック</p>
+  <h2 class="qz-ttl">あてはまるものを、<br>1つずつ選んでください。</h2>
+  <div class="qz-q" data-q="concern"><p class="qz-qt"><span>Q1</span>今いちばん気になることは？</p>
+    <div class="qz-opts"><button type="button" data-a="belly">お腹まわり</button><button type="button" data-a="clothes">服が入らなくなった</button><button type="button" data-a="rebound">痩せてもすぐ戻る</button></div></div>
+  <div class="qz-q" data-q="tried"><p class="qz-qt"><span>Q2</span>これまで試したことは？</p>
+    <div class="qz-opts"><button type="button" data-a="diet">食事を減らした</button><button type="button" data-a="workout">ジムや動画で運動</button><button type="button" data-a="yoga">ヨガ・ピラティス</button></div></div>
+  <div class="qz-q" data-q="worry"><p class="qz-qt"><span>Q3</span>通うときの不安は？</p>
+    <div class="qz-opts"><button type="button" data-a="hard">きつい運動が続くか</button><button type="button" data-a="eyes">人目が気になる</button><button type="button" data-a="time">時間が取れるか</button></div></div>
+  <div class="qz-res" id="qzRes" hidden>
+    <p class="qz-res-ttl">選んでいただいた内容に近いパートは、こちらです。</p>
+    <div class="qz-links" id="qzLinks"></div>
+  </div>
+</section>
 
 <!-- ══════════ EMPATHY ══════════ -->
 <section class="empathy">
@@ -650,7 +715,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 </section>
 
 <!-- ══════════ WHY ══════════ -->
-<section class="why">
+<section class="why" id="why">
   <span class="sec-eyebrow fi">変わらない理由</span>
   <h2 class="sec-ttl fi d1">「やっても変わらない」<br>本当の理由は、<br><em>順番が違うから</em>です。</h2>
   <div class="sec-bar fi d2"></div>
@@ -680,6 +745,17 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   <p class="future-note fi d3">※変化の感じ方や時期には個人差があります。</p>
 </section>
 
+<!-- ══════════ PRICE SUMMARY ══════════ -->
+<section class="psum" id="psum">
+  <p class="psum-ttl">料金の目安</p>
+  <div class="psum-rows">
+    <div class="psum-row"><span class="psum-k">体験セッション（90分）</span><span class="psum-v">5,500円<small>（税込）</small></span></div>
+    <div class="psum-row"><span class="psum-k">入会後</span><span class="psum-v">1回あたり 9,100円〜<small>（税込）</small></span></div>
+  </div>
+  <p class="psum-note">月2回〜8回のコースから選べます（別途、入会金11,000円・税込）。体験のあと、その場で決める必要はありません。</p>
+  <a href="#price" class="psum-link">料金プランをくわしく見る →</a>
+</section>
+
 <!-- ══════════ FEATURES ══════════ -->
 <section class="features" id="features">
   <span class="sec-eyebrow fi">選ばれる理由</span>
@@ -699,7 +775,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
     </div>
 
     <div class="feat-item">
-      <div class="feat-ico">
+      <div class="feat-ico" id="feat-private">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#D4537E" stroke-width="1.6"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
       <div>
@@ -721,7 +797,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
     </div>
 
     <div class="feat-item">
-      <div class="feat-ico">
+      <div class="feat-ico" id="feat-flex">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="#D4537E" stroke-width="1.6"/><path d="M16 2v4M8 2v4M3 10h18" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round"/><path d="M9 16l2 2 4-4" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
@@ -1094,6 +1170,38 @@ overlay.addEventListener('click',closeDrawer);
 document.querySelectorAll('.drawer-close-link').forEach(a=>{a.addEventListener('click',closeDrawer)});
 document.querySelectorAll('a[href*="kanzashi"]').forEach(a=>{a.addEventListener('click',function(){if(typeof fbq==='function')fbq('track','Lead');if(typeof gtag==='function')gtag('event','cta_click',{event_category:'booking',store:'赤坂',gender:a.dataset.gender||''});});});
 document.querySelectorAll('a[href*="lin.ee"],a[href*="line.me"]').forEach(a=>{a.addEventListener('click',function(){if(typeof gtag==='function')gtag('event','line_click',{event_category:'line',store:'赤坂',lp:'diet'});});});
+</script>
+<script>
+(function(){
+  var sel={};var LINKS={
+    case:['#case','同じように悩んでいた方の変化','40代・お仕事と子育て中のNさんの1年'],
+    why:['#why','「やっても変わらない」理由','減らす前に、体の使い方を整える順番'],
+    private:['#feat-private','人目を気にせず通える理由','他のお客様と会わない完全個室'],
+    flex:['#feat-flex','忙しくても続けやすい理由','開始直前まで変更・キャンセル無料'],
+    future:['#future','通った先にあるもの','服・鏡・健康的に整える']
+  };
+  function track(n,p){try{if(typeof gtag==='function')gtag('event',n,p)}catch(e){}}
+  document.querySelectorAll('.qz-q').forEach(function(q){
+    q.querySelectorAll('button').forEach(function(b){
+      b.addEventListener('click',function(){
+        q.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});
+        b.classList.add('on');sel[q.dataset.q]=b.dataset.a;
+        track('selfcheck_answer',{question:q.dataset.q,answer:b.dataset.a});
+        if(sel.concern&&sel.tried&&sel.worry)show();
+      });
+    });
+  });
+  function show(){
+    var keys=[];
+    keys.push((sel.concern==='rebound'||sel.tried==='workout')?'case':'why');
+    keys.push(sel.worry==='eyes'?'private':sel.worry==='time'?'flex':(keys[0]==='why'?'case':'why'));
+    if(sel.concern==='clothes')keys.push('future');
+    var box=document.getElementById('qzLinks');box.innerHTML='';
+    keys.forEach(function(k){var l=LINKS[k];var a=document.createElement('a');a.href=l[0];a.innerHTML=l[1]+' →<small>'+l[2]+'</small>';a.addEventListener('click',function(){track('selfcheck_link',{target:k})});box.appendChild(a)});
+    var r=document.getElementById('qzRes');r.hidden=false;
+    track('selfcheck_complete',{concern:sel.concern,tried:sel.tried,worry:sel.worry});
+  }
+})();
 </script>
 </body>
 </html>
