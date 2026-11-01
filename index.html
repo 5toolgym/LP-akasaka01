@@ -470,6 +470,8 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 /* ── LINE primary CTA ── */
 .line-cta{display:flex;align-items:center;justify-content:center;gap:8px;background:#06C755!important;color:#fff!important;padding:17px 20px;border-radius:8px;font-size:15px;font-weight:700;letter-spacing:.05em;text-decoration:none;width:100%;max-width:480px;margin:0 auto 10px;box-shadow:0 4px 16px rgba(6,199,85,.25);border:none;box-sizing:border-box}
 .line-cta:active{transform:translateY(1px)}
+.rsv-split{max-width:480px;margin:0 auto}.rsv-split-ttl{font-size:12px;color:#D4537E;font-weight:700;text-align:center;margin:4px 0 6px;letter-spacing:.04em}.rsv-split-btns{display:flex;gap:8px}.rsv-btn{flex:1;display:flex;align-items:center;justify-content:center;background:transparent;color:#D4537E;border:1.5px solid #D4537E;border-radius:8px;font-size:13px;font-weight:700;padding:12px 8px;text-decoration:none;text-align:center;box-sizing:border-box}.rsv-btn:active{transform:translateY(1px)}.why .rsv-split-ttl,.fcta .rsv-split-ttl{color:#fff}.why .rsv-btn,.fcta .rsv-btn{color:#fff;border-color:rgba(255,255,255,.8)}.why .rsv-note,.fcta .rsv-note{color:rgba(255,255,255,.7)}
+.rsv-note{font-size:11px;color:#888;line-height:1.7;text-align:center;margin:8px auto 0}
 .line-cta + a[href*="kanzashi"]{background:transparent!important;color:#D4537E!important;border:1.5px solid #D4537E!important;box-shadow:none!important;animation:none!important;font-size:13px!important;padding:12px 16px!important;max-width:480px;margin-left:auto;margin-right:auto}
 .line-cta + a.btn-white,.line-cta + a.fcta-btn{color:#fff!important;border-color:rgba(255,255,255,.8)!important}
 </style>
@@ -489,7 +491,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 
 <!-- TOPBAR -->
 <div class="topbar">
-  体験は各店 毎月5名限定｜<a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei">体験を予約する（90分 5,500円）</a>
+  体験は各店 毎月5名限定｜<a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0">体験を予約する（90分 5,500円）</a>
 </div>
 
 <!-- NAV -->
@@ -527,9 +529,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   <div class="hero-photo"><picture><source srcset="images/hero-diet-promo.webp" type="image/webp"><img width="1080" height="1350" src="images/hero-diet-promo.jpg" fetchpriority="high" alt="5toolgym 福岡赤坂・大濠公園店 完全個室パーソナルトレーニングジム 限定5名 体験90分5,500円"></picture></div>
   <div class="hero-bottom" style="padding-top:24px">
     <a href="https://lin.ee/7wyOAiR" class="line-cta" data-line-pos="cta1" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問だけする</a>
-    <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="hero-btn" target="_blank">
-      体験を予約する（90分 5,500円）
-    </a>
+    <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
     <p class="hero-price" style="color:rgba(0,0,0,0.45);font-size:12px;margin-top:10px;letter-spacing:0.06em;">初回90分 5,500円（税込）</p>
   </div>
   <div style="text-align: center; padding: 12px 0 0;">
@@ -607,7 +607,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   </div>
   <p class="why-note fi d2">我慢して食べなかった人ほど、<br>ちゃんと食べることが大事になります。</p>
   <a href="https://lin.ee/7wyOAiR" class="line-cta" data-line-pos="cta2" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問だけする</a>
-  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="trial-btn fi d3" target="_blank" style="max-width:420px;margin:0 auto">体験で、実際に確かめてみる →</a>
+  <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
 </section>
 
 <picture><source srcset="images/gym-interior.webp" type="image/webp"><img width="1200" height="900" loading="lazy" src="images/gym-interior.jpg" alt="5toolgym赤坂店 トレーニングエリア" style="width:100%;height:260px;object-fit:cover;object-position:center;display:block"></picture>
@@ -740,7 +740,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 <div style="background:var(--bg2);padding:32px var(--sp);text-align:center;border-top:1px solid var(--border)">
   <p style="font-size:12px;color:var(--light);margin-bottom:16px;letter-spacing:.06em">まずは体験してから、コースを決めていただけます</p>
   <a href="https://lin.ee/7wyOAiR" class="line-cta" data-line-pos="cta3" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問だけする</a>
-  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="trial-btn fi" target="_blank" style="max-width:420px;margin:0 auto">体験で実際に確かめてみる（90分 5,500円）→</a>
+  <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
 </div>
 
 <!-- ══════════ TRAINERS ══════════ -->
@@ -814,7 +814,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
   </div>
   <p class="results-note" style="margin-top:12px">※個人の感想です。効果には個人差があります。</p>
   <a href="https://lin.ee/7wyOAiR" class="line-cta" data-line-pos="cta4" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問だけする</a>
-  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="trial-btn fi d3" target="_blank">体験を予約する（90分 5,500円）</a>
+  <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
 </section>
 
 <!-- ══════════ FLOW ══════════ -->
@@ -870,7 +870,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
 <div style="background:var(--w);padding:32px var(--sp);text-align:center;border-top:1px solid var(--border)">
   <p style="font-size:12px;color:var(--light);margin-bottom:16px;letter-spacing:.06em">予約はボタン1つ。相談だけでも大丈夫です</p>
   <a href="https://lin.ee/7wyOAiR" class="line-cta" data-line-pos="cta5" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問だけする</a>
-  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="trial-btn fi" target="_blank" style="max-width:420px;margin:0 auto">体験を予約する（90分 5,500円）</a>
+  <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
 </div>
 
 <!-- ══════════ TRIAL ══════════ -->
@@ -892,7 +892,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
       <div class="trial-row"><div class="ck"></div>完全個室・マンツーマン指導</div>
     </div>
     <a href="https://lin.ee/7wyOAiR" class="line-cta" data-line-pos="cta6" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問だけする</a>
-    <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="trial-btn" target="_blank">体験を予約する（90分 5,500円）</a>
+    <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
     <p class="trial-note" style="margin-top:8px">お支払方法：現金・クレジットカード・各種キャッシュレス決済</p>
   </div>
 </section>
@@ -965,7 +965,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
         <dt class="a-dt">営業時間</dt><dd class="a-dd">9:30〜22:30<br>完全予約制</dd>
       </dl>
       <a href="https://lin.ee/7wyOAiR" class="line-cta" data-line-pos="cta7" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問だけする</a>
-      <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="access-btn" target="_blank">今すぐ予約・問い合わせ →</a>
+      <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
     </div>
   </div>
 </section>
@@ -992,10 +992,7 @@ footer{background:var(--text);border-top:1px solid rgba(255,255,255,.07);padding
     <strong>身体の使い方の違いを、90分で確かめてみてください。</strong>
   </p>
   <a href="https://lin.ee/7wyOAiR" class="line-cta" data-line-pos="cta8" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>LINEで質問だけする</a>
-  <a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei" class="fcta-btn fi d3" target="_blank">
-    <svg width="18" height="18" viewBox="0 0 22 22" fill="none"><path d="M11 2C6 2 2 5.5 2 9.8c0 2.6 1.5 4.9 3.8 6.3l-.7 2.9 3.2-1.7c.8.2 1.8.3 2.7.3 5 0 9-3.5 9-7.8S16 2 11 2z" fill="white"/></svg>
-    今すぐ予約する →
-  </a>
+  <div class="rsv-split"><p class="rsv-split-ttl">体験を予約する（90分 5,500円）</p><div class="rsv-split-btns"><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=270297" class="rsv-btn" data-gender="female" target="_blank">女性の方はこちら</a><a href="https://instagram.kanzashi.com/l/1wufb22dHU8/kirei?staffId=0&amp;couponId=418713" class="rsv-btn" data-gender="male" target="_blank">男性の方はこちら</a></div><p class="rsv-note">体験は90分です（前後の準備を含め120分の枠でお取りします）。<br>予約の確定時に、LINE・Googleでのログインかメールでの確認があります。</p></div>
   <p class="fcta-note fi d3">体験は各店 毎月5名限定 ／ 相談だけでもOK</p>
 </section>
 
@@ -1027,7 +1024,7 @@ function closeDrawer(){hmbBtn.classList.remove('open');drawer.classList.remove('
 hmbBtn.addEventListener('click',()=>{drawer.classList.contains('open')?closeDrawer():openDrawer()});
 overlay.addEventListener('click',closeDrawer);
 document.querySelectorAll('.drawer-close-link').forEach(a=>{a.addEventListener('click',closeDrawer)});
-document.querySelectorAll('a[href*="kanzashi"]').forEach(a=>{a.addEventListener('click',function(){if(typeof fbq==='function')fbq('track','Lead');if(typeof gtag==='function')gtag('event','cta_click',{event_category:'booking',store:'赤坂'});});});
+document.querySelectorAll('a[href*="kanzashi"]').forEach(a=>{a.addEventListener('click',function(){if(typeof fbq==='function')fbq('track','Lead');if(typeof gtag==='function')gtag('event','cta_click',{event_category:'booking',store:'赤坂',gender:a.dataset.gender||''});});});
 document.querySelectorAll('a[href*="lin.ee"],a[href*="line.me"]').forEach(a=>{a.addEventListener('click',function(){if(typeof gtag==='function')gtag('event','line_click',{event_category:'line',store:'赤坂',lp:'diet'});});});
 </script>
 </body>
