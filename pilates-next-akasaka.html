@@ -1169,12 +1169,11 @@ document.querySelectorAll('a[href*="kanzashi"]').forEach(a=>{
   });
 });
 
-document.querySelectorAll('a[href*="lin.ee"]').forEach(a=>{
-  a.addEventListener('click',function(){
-    if(typeof fbq==='function')fbq('track','Lead',{content_name:'line'});
-    if(typeof gtag==='function')gtag('event','line_click',{event_category:'booking',store:'赤坂',page:'pilates_next',position:a.dataset.linePos||''});
-  });
-});
+/* LINEクリック計測（薬院LPと同一ロジック）：document全体で拾い、後から追加されたボタンや画像内タップも漏らさない */
+(function(){var last=0;document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="lin.ee"],a[href*="line.me"]');if(!a)return;var n=Date.now();if(n-last<800)return;last=n;
+  try{if(typeof fbq==='function')fbq('track','Lead',{content_name:'line'});}catch(_){}
+  try{if(typeof gtag==='function')gtag('event','line_click',{event_category:'line',store:'赤坂',page:'pilates_next',lp:'pilates_next',position:a.dataset.linePos||'other'});}catch(_){}
+},true);})();
 
 // 滞在・スクロールの到達点を送る（アプリ内ブラウザを閉じたときにエンゲージメント時間が送られず0秒になるのを防ぐ）
 (function(){
